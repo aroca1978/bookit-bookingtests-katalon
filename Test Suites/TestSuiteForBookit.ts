@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>TestSuiteForBookit</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>b1a4aea4-97aa-4ba2-a95c-c8ee6e5ec069</testSuiteGuid>
+   <testCaseLink>
+      <guid>7293a074-36c6-4317-b59c-33118012d8f2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Booking01</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>f7e73365-b322-4f70-b208-8a2baaf74b31</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/myDates</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>f7e73365-b322-4f70-b208-8a2baaf74b31</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>iniDate</value>
+         <variableId>b8490973-fe1c-4d11-8f9d-d124d18496b3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>f7e73365-b322-4f70-b208-8a2baaf74b31</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>endDate</value>
+         <variableId>ededd428-d842-4de6-b07b-4fd213be21c4</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

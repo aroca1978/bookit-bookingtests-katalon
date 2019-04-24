@@ -1,0 +1,82 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuiteForBookit,Firefox 66.0,,2019-04-23 22:31:27,2019-04-23 22:33:09,1m - 42.141s,PASSED
+,,,,,,
+Test Cases/Booking01,Firefox 66.0,,2019-04-23 22:31:27,2019-04-23 22:31:53,26.261s,PASSED
+"openBrowser(""https://bookit-qa6.com"")",Firefox 66.0,,2019-04-23 22:31:27,2019-04-23 22:31:36,8.396s,PASSED
+delay(3),Firefox 66.0,,2019-04-23 22:31:36,2019-04-23 22:31:39,3.020s,PASSED
+"click(findTestObject(""homepage/flight_checkbox""))",Firefox 66.0,,2019-04-23 22:31:39,2019-04-23 22:31:39,0.525s,PASSED
+delay(3),Firefox 66.0,,2019-04-23 22:31:39,2019-04-23 22:31:42,3.003s,PASSED
+"setText(findTestObject(""homepage/city_or_airport""), ""cheese"")",Firefox 66.0,,2019-04-23 22:31:42,2019-04-23 22:31:42,0.122s,PASSED
+delay(3),Firefox 66.0,,2019-04-23 22:31:42,2019-04-23 22:31:45,3.004s,PASSED
+"click(findTestObject(""homepage/div_Cheese City IL US""))",Firefox 66.0,,2019-04-23 22:31:45,2019-04-23 22:31:45,0.277s,PASSED
+delay(1),Firefox 66.0,,2019-04-23 22:31:45,2019-04-23 22:31:46,1.004s,PASSED
+"checkinId = getAttribute(findTestObject(""homepage/checkin_date""), ""id"")",Firefox 66.0,,2019-04-23 22:31:46,2019-04-23 22:31:47,0.035s,PASSED
+"checkoutId = getAttribute(findTestObject(""homepage/checkout_date""), ""id"")",Firefox 66.0,,2019-04-23 22:31:47,2019-04-23 22:31:47,0.025s,PASSED
+"myIniDate = ""$('#"" + checkinId + ""').val('"" + iniDate + ""')""",Firefox 66.0,,2019-04-23 22:31:47,2019-04-23 22:31:47,0.001s,PASSED
+"executeJavaScript(myIniDate, null)",Firefox 66.0,,2019-04-23 22:31:47,2019-04-23 22:31:47,0.020s,PASSED
+"myEndDate = ""$('#"" + checkoutId + ""').val('"" + endDate + ""')""",Firefox 66.0,,2019-04-23 22:31:47,2019-04-23 22:31:47,0.001s,PASSED
+"executeJavaScript(myEndDate, null)",Firefox 66.0,,2019-04-23 22:31:47,2019-04-23 22:31:47,0.014s,PASSED
+delay(1),Firefox 66.0,,2019-04-23 22:31:47,2019-04-23 22:31:48,1.005s,PASSED
+"click(findTestObject(""homepage/button_Search""))",Firefox 66.0,,2019-04-23 22:31:48,2019-04-23 22:31:52,4.824s,PASSED
+waitForPageLoad(0),Firefox 66.0,,2019-04-23 22:31:52,2019-04-23 22:31:52,0.070s,PASSED
+closeBrowser(),Firefox 66.0,,2019-04-23 22:31:52,2019-04-23 22:31:53,0.685s,PASSED
+,,,,,,
+Test Cases/Booking01,Firefox 66.0,,2019-04-23 22:31:53,2019-04-23 22:32:18,25.193s,PASSED
+"openBrowser(""https://bookit-qa6.com"")",Firefox 66.0,,2019-04-23 22:31:53,2019-04-23 22:32:01,7.603s,PASSED
+delay(3),Firefox 66.0,,2019-04-23 22:32:01,2019-04-23 22:32:04,3.007s,PASSED
+"click(findTestObject(""homepage/flight_checkbox""))",Firefox 66.0,,2019-04-23 22:32:04,2019-04-23 22:32:04,0.661s,PASSED
+delay(3),Firefox 66.0,,2019-04-23 22:32:04,2019-04-23 22:32:07,3.005s,PASSED
+"setText(findTestObject(""homepage/city_or_airport""), ""cheese"")",Firefox 66.0,,2019-04-23 22:32:07,2019-04-23 22:32:08,0.119s,PASSED
+delay(3),Firefox 66.0,,2019-04-23 22:32:08,2019-04-23 22:32:11,3.007s,PASSED
+"click(findTestObject(""homepage/div_Cheese City IL US""))",Firefox 66.0,,2019-04-23 22:32:11,2019-04-23 22:32:11,0.266s,PASSED
+delay(1),Firefox 66.0,,2019-04-23 22:32:11,2019-04-23 22:32:12,1.012s,PASSED
+"checkinId = getAttribute(findTestObject(""homepage/checkin_date""), ""id"")",Firefox 66.0,,2019-04-23 22:32:12,2019-04-23 22:32:12,0.026s,PASSED
+"checkoutId = getAttribute(findTestObject(""homepage/checkout_date""), ""id"")",Firefox 66.0,,2019-04-23 22:32:12,2019-04-23 22:32:12,0.021s,PASSED
+"myIniDate = ""$('#"" + checkinId + ""').val('"" + iniDate + ""')""",Firefox 66.0,,2019-04-23 22:32:12,2019-04-23 22:32:12,0.001s,PASSED
+"executeJavaScript(myIniDate, null)",Firefox 66.0,,2019-04-23 22:32:12,2019-04-23 22:32:12,0.009s,PASSED
+"myEndDate = ""$('#"" + checkoutId + ""').val('"" + endDate + ""')""",Firefox 66.0,,2019-04-23 22:32:12,2019-04-23 22:32:12,0.000s,PASSED
+"executeJavaScript(myEndDate, null)",Firefox 66.0,,2019-04-23 22:32:12,2019-04-23 22:32:12,0.013s,PASSED
+delay(1),Firefox 66.0,,2019-04-23 22:32:12,2019-04-23 22:32:13,1.003s,PASSED
+"click(findTestObject(""homepage/button_Search""))",Firefox 66.0,,2019-04-23 22:32:13,2019-04-23 22:32:18,4.749s,PASSED
+waitForPageLoad(0),Firefox 66.0,,2019-04-23 22:32:18,2019-04-23 22:32:18,0.039s,PASSED
+closeBrowser(),Firefox 66.0,,2019-04-23 22:32:18,2019-04-23 22:32:18,0.640s,PASSED
+,,,,,,
+Test Cases/Booking01,Firefox 66.0,,2019-04-23 22:32:18,2019-04-23 22:32:43,24.481s,PASSED
+"openBrowser(""https://bookit-qa6.com"")",Firefox 66.0,,2019-04-23 22:32:18,2019-04-23 22:32:24,5.581s,PASSED
+delay(3),Firefox 66.0,,2019-04-23 22:32:24,2019-04-23 22:32:27,3.004s,PASSED
+"click(findTestObject(""homepage/flight_checkbox""))",Firefox 66.0,,2019-04-23 22:32:27,2019-04-23 22:32:29,1.617s,PASSED
+delay(3),Firefox 66.0,,2019-04-23 22:32:29,2019-04-23 22:32:32,3.004s,PASSED
+"setText(findTestObject(""homepage/city_or_airport""), ""cheese"")",Firefox 66.0,,2019-04-23 22:32:32,2019-04-23 22:32:32,0.093s,PASSED
+delay(3),Firefox 66.0,,2019-04-23 22:32:32,2019-04-23 22:32:35,3.004s,PASSED
+"click(findTestObject(""homepage/div_Cheese City IL US""))",Firefox 66.0,,2019-04-23 22:32:35,2019-04-23 22:32:35,0.271s,PASSED
+delay(1),Firefox 66.0,,2019-04-23 22:32:35,2019-04-23 22:32:36,1.003s,PASSED
+"checkinId = getAttribute(findTestObject(""homepage/checkin_date""), ""id"")",Firefox 66.0,,2019-04-23 22:32:36,2019-04-23 22:32:36,0.025s,PASSED
+"checkoutId = getAttribute(findTestObject(""homepage/checkout_date""), ""id"")",Firefox 66.0,,2019-04-23 22:32:36,2019-04-23 22:32:36,0.023s,PASSED
+"myIniDate = ""$('#"" + checkinId + ""').val('"" + iniDate + ""')""",Firefox 66.0,,2019-04-23 22:32:36,2019-04-23 22:32:36,0.001s,PASSED
+"executeJavaScript(myIniDate, null)",Firefox 66.0,,2019-04-23 22:32:36,2019-04-23 22:32:36,0.012s,PASSED
+"myEndDate = ""$('#"" + checkoutId + ""').val('"" + endDate + ""')""",Firefox 66.0,,2019-04-23 22:32:36,2019-04-23 22:32:36,0.000s,PASSED
+"executeJavaScript(myEndDate, null)",Firefox 66.0,,2019-04-23 22:32:36,2019-04-23 22:32:36,0.011s,PASSED
+delay(1),Firefox 66.0,,2019-04-23 22:32:36,2019-04-23 22:32:37,1.004s,PASSED
+"click(findTestObject(""homepage/button_Search""))",Firefox 66.0,,2019-04-23 22:32:37,2019-04-23 22:32:42,5.091s,PASSED
+waitForPageLoad(0),Firefox 66.0,,2019-04-23 22:32:42,2019-04-23 22:32:42,0.064s,PASSED
+closeBrowser(),Firefox 66.0,,2019-04-23 22:32:42,2019-04-23 22:32:43,0.664s,PASSED
+,,,,,,
+Test Cases/Booking01,Firefox 66.0,,2019-04-23 22:32:43,2019-04-23 22:33:09,26.041s,PASSED
+"openBrowser(""https://bookit-qa6.com"")",Firefox 66.0,,2019-04-23 22:32:43,2019-04-23 22:32:50,7.445s,PASSED
+delay(3),Firefox 66.0,,2019-04-23 22:32:50,2019-04-23 22:32:53,3.003s,PASSED
+"click(findTestObject(""homepage/flight_checkbox""))",Firefox 66.0,,2019-04-23 22:32:53,2019-04-23 22:32:55,1.899s,PASSED
+delay(3),Firefox 66.0,,2019-04-23 22:32:55,2019-04-23 22:32:58,3.004s,PASSED
+"setText(findTestObject(""homepage/city_or_airport""), ""cheese"")",Firefox 66.0,,2019-04-23 22:32:58,2019-04-23 22:32:59,0.287s,PASSED
+delay(3),Firefox 66.0,,2019-04-23 22:32:59,2019-04-23 22:33:02,3.006s,PASSED
+"click(findTestObject(""homepage/div_Cheese City IL US""))",Firefox 66.0,,2019-04-23 22:33:02,2019-04-23 22:33:02,0.256s,PASSED
+delay(1),Firefox 66.0,,2019-04-23 22:33:02,2019-04-23 22:33:03,1.006s,PASSED
+"checkinId = getAttribute(findTestObject(""homepage/checkin_date""), ""id"")",Firefox 66.0,,2019-04-23 22:33:03,2019-04-23 22:33:03,0.025s,PASSED
+"checkoutId = getAttribute(findTestObject(""homepage/checkout_date""), ""id"")",Firefox 66.0,,2019-04-23 22:33:03,2019-04-23 22:33:03,0.021s,PASSED
+"myIniDate = ""$('#"" + checkinId + ""').val('"" + iniDate + ""')""",Firefox 66.0,,2019-04-23 22:33:03,2019-04-23 22:33:03,0.001s,PASSED
+"executeJavaScript(myIniDate, null)",Firefox 66.0,,2019-04-23 22:33:03,2019-04-23 22:33:03,0.010s,PASSED
+"myEndDate = ""$('#"" + checkoutId + ""').val('"" + endDate + ""')""",Firefox 66.0,,2019-04-23 22:33:03,2019-04-23 22:33:03,0.000s,PASSED
+"executeJavaScript(myEndDate, null)",Firefox 66.0,,2019-04-23 22:33:03,2019-04-23 22:33:03,0.013s,PASSED
+delay(1),Firefox 66.0,,2019-04-23 22:33:03,2019-04-23 22:33:04,1.002s,PASSED
+"click(findTestObject(""homepage/button_Search""))",Firefox 66.0,,2019-04-23 22:33:04,2019-04-23 22:33:08,4.385s,PASSED
+waitForPageLoad(0),Firefox 66.0,,2019-04-23 22:33:08,2019-04-23 22:33:08,0.040s,PASSED
+closeBrowser(),Firefox 66.0,,2019-04-23 22:33:08,2019-04-23 22:33:09,0.629s,PASSED

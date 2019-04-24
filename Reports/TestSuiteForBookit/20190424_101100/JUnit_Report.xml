@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TestSuiteForBookit" time="85" tests="4" failures="0" errors="0">
+   <testsuite name="TestSuiteForBookit" tests="4" failures="0" errors="0" time="85" timestamp="2019-04-24 10:11:02" hostname="andres - 10.2.221.14" id="Test Suites/TestSuiteForBookit">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/andres/Katalon Studio/TestProject/Reports/TestSuiteForBookit/20190424_101100"/>
+         <property name="logFiles" value="/Users/andres/Katalon Studio/TestProject/Reports/TestSuiteForBookit/20190424_101100/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="andres - 10.2.221.14"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Firefox 66.0"/>
+         <property name="hostAddress" value="10.2.221.14"/>
+         <property name="sessionId" value="95d1e217-b9ae-954b-b3f6-bd6431b2253f"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Booking01" classname="Test Cases/Booking01" status="PASSED">
+         <system-out><![CDATA[2019-04-24 10:11:02 - [TEST_CASE][PASSED] - Test Cases/Booking01: Test Cases/Booking01
+
+2019-04-24 10:11:02 - [TEST_STEP][PASSED] - openBrowser("https://bookit-qa6.com"): Browser is opened with url: 'https://bookit-qa6.com'
+
+2019-04-24 10:11:03 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2019-04-24 10:11:03 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-04-24 10:11:07 - [MESSAGE][PASSED] - Browser is opened with url: 'https://bookit-qa6.com'
+
+2019-04-24 10:11:07 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-24 10:11:10 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-24 10:11:10 - [TEST_STEP][PASSED] - click(findTestObject("homepage/flight_checkbox")): Object: 'Object Repository/homepage/flight_checkbox' is clicked on
+
+2019-04-24 10:11:11 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/flight_checkbox' is clicked on
+
+2019-04-24 10:11:11 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-24 10:11:14 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-24 10:11:14 - [TEST_STEP][PASSED] - setText(findTestObject("homepage/city_or_airport"), "cheese"): Text 'cheese' is set on object 'Object Repository/homepage/city_or_airport'
+
+2019-04-24 10:11:14 - [MESSAGE][PASSED] - Text 'cheese' is set on object 'Object Repository/homepage/city_or_airport'
+
+2019-04-24 10:11:14 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-24 10:11:17 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-24 10:11:17 - [TEST_STEP][PASSED] - click(findTestObject("homepage/div_Cheese City IL US")): Object: 'Object Repository/homepage/div_Cheese City IL US' is clicked on
+
+2019-04-24 10:11:17 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/div_Cheese City IL US' is clicked on
+
+2019-04-24 10:11:17 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-24 10:11:18 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-24 10:11:18 - [TEST_STEP][PASSED] - checkinId = getAttribute(findTestObject("homepage/checkin_date"), "id"): Attribute 'id' of object 'Object Repository/homepage/checkin_date' is: 'ember532-fd'
+
+2019-04-24 10:11:18 - [MESSAGE][PASSED] - Attribute 'id' of object 'Object Repository/homepage/checkin_date' is: 'ember532-fd'
+
+2019-04-24 10:11:18 - [TEST_STEP][PASSED] - checkoutId = getAttribute(findTestObject("homepage/checkout_date"), "id"): Attribute 'id' of object 'Object Repository/homepage/checkout_date' is: 'ember532-td'
+
+2019-04-24 10:11:18 - [MESSAGE][PASSED] - Attribute 'id' of object 'Object Repository/homepage/checkout_date' is: 'ember532-td'
+
+2019-04-24 10:11:18 - [TEST_STEP][PASSED] - myIniDate = "$('#" + checkinId + "').val('" + iniDate + "')": null
+
+2019-04-24 10:11:18 - [TEST_STEP][PASSED] - executeJavaScript(myIniDate, null): Execute JavaScript '$('#ember532-fd').val('05/01/2019')' successfully
+
+2019-04-24 10:11:18 - [MESSAGE][PASSED] - Execute JavaScript '$('#ember532-fd').val('05/01/2019')' successfully
+
+2019-04-24 10:11:18 - [TEST_STEP][PASSED] - myEndDate = "$('#" + checkoutId + "').val('" + endDate + "')": null
+
+2019-04-24 10:11:18 - [TEST_STEP][PASSED] - executeJavaScript(myEndDate, null): Execute JavaScript '$('#ember532-td').val('05/05/2019')' successfully
+
+2019-04-24 10:11:18 - [MESSAGE][PASSED] - Execute JavaScript '$('#ember532-td').val('05/05/2019')' successfully
+
+2019-04-24 10:11:18 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-24 10:11:19 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-24 10:11:19 - [TEST_STEP][PASSED] - click(findTestObject("homepage/button_Search")): Object: 'Object Repository/homepage/button_Search' is clicked on
+
+2019-04-24 10:11:23 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/button_Search' is clicked on
+
+2019-04-24 10:11:23 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-24 10:11:23 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-24 10:11:23 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-04-24 10:11:24 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Booking01" classname="Test Cases/Booking01" status="PASSED">
+         <system-out><![CDATA[2019-04-24 10:11:24 - [TEST_CASE][PASSED] - Test Cases/Booking01: Test Cases/Booking01
+
+2019-04-24 10:11:24 - [TEST_STEP][PASSED] - openBrowser("https://bookit-qa6.com"): Browser is opened with url: 'https://bookit-qa6.com'
+
+2019-04-24 10:11:24 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2019-04-24 10:11:30 - [MESSAGE][PASSED] - Browser is opened with url: 'https://bookit-qa6.com'
+
+2019-04-24 10:11:30 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-24 10:11:33 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-24 10:11:33 - [TEST_STEP][PASSED] - click(findTestObject("homepage/flight_checkbox")): Object: 'Object Repository/homepage/flight_checkbox' is clicked on
+
+2019-04-24 10:11:33 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/flight_checkbox' is clicked on
+
+2019-04-24 10:11:33 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-24 10:11:36 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-24 10:11:36 - [TEST_STEP][PASSED] - setText(findTestObject("homepage/city_or_airport"), "cheese"): Text 'cheese' is set on object 'Object Repository/homepage/city_or_airport'
+
+2019-04-24 10:11:36 - [MESSAGE][PASSED] - Text 'cheese' is set on object 'Object Repository/homepage/city_or_airport'
+
+2019-04-24 10:11:36 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-24 10:11:39 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-24 10:11:39 - [TEST_STEP][PASSED] - click(findTestObject("homepage/div_Cheese City IL US")): Object: 'Object Repository/homepage/div_Cheese City IL US' is clicked on
+
+2019-04-24 10:11:39 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/div_Cheese City IL US' is clicked on
+
+2019-04-24 10:11:39 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-24 10:11:40 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-24 10:11:40 - [TEST_STEP][PASSED] - checkinId = getAttribute(findTestObject("homepage/checkin_date"), "id"): Attribute 'id' of object 'Object Repository/homepage/checkin_date' is: 'ember532-fd'
+
+2019-04-24 10:11:40 - [MESSAGE][PASSED] - Attribute 'id' of object 'Object Repository/homepage/checkin_date' is: 'ember532-fd'
+
+2019-04-24 10:11:40 - [TEST_STEP][PASSED] - checkoutId = getAttribute(findTestObject("homepage/checkout_date"), "id"): Attribute 'id' of object 'Object Repository/homepage/checkout_date' is: 'ember532-td'
+
+2019-04-24 10:11:40 - [MESSAGE][PASSED] - Attribute 'id' of object 'Object Repository/homepage/checkout_date' is: 'ember532-td'
+
+2019-04-24 10:11:40 - [TEST_STEP][PASSED] - myIniDate = "$('#" + checkinId + "').val('" + iniDate + "')": null
+
+2019-04-24 10:11:40 - [TEST_STEP][PASSED] - executeJavaScript(myIniDate, null): Execute JavaScript '$('#ember532-fd').val('05/10/2019')' successfully
+
+2019-04-24 10:11:40 - [MESSAGE][PASSED] - Execute JavaScript '$('#ember532-fd').val('05/10/2019')' successfully
+
+2019-04-24 10:11:40 - [TEST_STEP][PASSED] - myEndDate = "$('#" + checkoutId + "').val('" + endDate + "')": null
+
+2019-04-24 10:11:40 - [TEST_STEP][PASSED] - executeJavaScript(myEndDate, null): Execute JavaScript '$('#ember532-td').val('05/13/2019')' successfully
+
+2019-04-24 10:11:40 - [MESSAGE][PASSED] - Execute JavaScript '$('#ember532-td').val('05/13/2019')' successfully
+
+2019-04-24 10:11:40 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-24 10:11:41 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-24 10:11:41 - [TEST_STEP][PASSED] - click(findTestObject("homepage/button_Search")): Object: 'Object Repository/homepage/button_Search' is clicked on
+
+2019-04-24 10:11:45 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/button_Search' is clicked on
+
+2019-04-24 10:11:45 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-24 10:11:45 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-24 10:11:45 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-04-24 10:11:45 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Booking01" classname="Test Cases/Booking01" status="PASSED">
+         <system-out><![CDATA[2019-04-24 10:11:45 - [TEST_CASE][PASSED] - Test Cases/Booking01: Test Cases/Booking01
+
+2019-04-24 10:11:45 - [TEST_STEP][PASSED] - openBrowser("https://bookit-qa6.com"): Browser is opened with url: 'https://bookit-qa6.com'
+
+2019-04-24 10:11:45 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2019-04-24 10:11:50 - [MESSAGE][PASSED] - Browser is opened with url: 'https://bookit-qa6.com'
+
+2019-04-24 10:11:50 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-24 10:11:53 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-24 10:11:53 - [TEST_STEP][PASSED] - click(findTestObject("homepage/flight_checkbox")): Object: 'Object Repository/homepage/flight_checkbox' is clicked on
+
+2019-04-24 10:11:54 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/flight_checkbox' is clicked on
+
+2019-04-24 10:11:54 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-24 10:11:57 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-24 10:11:57 - [TEST_STEP][PASSED] - setText(findTestObject("homepage/city_or_airport"), "cheese"): Text 'cheese' is set on object 'Object Repository/homepage/city_or_airport'
+
+2019-04-24 10:11:57 - [MESSAGE][PASSED] - Text 'cheese' is set on object 'Object Repository/homepage/city_or_airport'
+
+2019-04-24 10:11:57 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-24 10:12:00 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-24 10:12:00 - [TEST_STEP][PASSED] - click(findTestObject("homepage/div_Cheese City IL US")): Object: 'Object Repository/homepage/div_Cheese City IL US' is clicked on
+
+2019-04-24 10:12:00 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/div_Cheese City IL US' is clicked on
+
+2019-04-24 10:12:00 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-24 10:12:01 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-24 10:12:01 - [TEST_STEP][PASSED] - checkinId = getAttribute(findTestObject("homepage/checkin_date"), "id"): Attribute 'id' of object 'Object Repository/homepage/checkin_date' is: 'ember532-fd'
+
+2019-04-24 10:12:01 - [MESSAGE][PASSED] - Attribute 'id' of object 'Object Repository/homepage/checkin_date' is: 'ember532-fd'
+
+2019-04-24 10:12:01 - [TEST_STEP][PASSED] - checkoutId = getAttribute(findTestObject("homepage/checkout_date"), "id"): Attribute 'id' of object 'Object Repository/homepage/checkout_date' is: 'ember532-td'
+
+2019-04-24 10:12:01 - [MESSAGE][PASSED] - Attribute 'id' of object 'Object Repository/homepage/checkout_date' is: 'ember532-td'
+
+2019-04-24 10:12:01 - [TEST_STEP][PASSED] - myIniDate = "$('#" + checkinId + "').val('" + iniDate + "')": null
+
+2019-04-24 10:12:01 - [TEST_STEP][PASSED] - executeJavaScript(myIniDate, null): Execute JavaScript '$('#ember532-fd').val('06/01/2019')' successfully
+
+2019-04-24 10:12:01 - [MESSAGE][PASSED] - Execute JavaScript '$('#ember532-fd').val('06/01/2019')' successfully
+
+2019-04-24 10:12:01 - [TEST_STEP][PASSED] - myEndDate = "$('#" + checkoutId + "').val('" + endDate + "')": null
+
+2019-04-24 10:12:01 - [TEST_STEP][PASSED] - executeJavaScript(myEndDate, null): Execute JavaScript '$('#ember532-td').val('06/19/2019')' successfully
+
+2019-04-24 10:12:01 - [MESSAGE][PASSED] - Execute JavaScript '$('#ember532-td').val('06/19/2019')' successfully
+
+2019-04-24 10:12:01 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-24 10:12:02 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-24 10:12:02 - [TEST_STEP][PASSED] - click(findTestObject("homepage/button_Search")): Object: 'Object Repository/homepage/button_Search' is clicked on
+
+2019-04-24 10:12:06 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/button_Search' is clicked on
+
+2019-04-24 10:12:06 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-24 10:12:06 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-24 10:12:06 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-04-24 10:12:06 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Booking01" classname="Test Cases/Booking01" status="PASSED">
+         <system-out><![CDATA[2019-04-24 10:12:06 - [TEST_CASE][PASSED] - Test Cases/Booking01: Test Cases/Booking01
+
+2019-04-24 10:12:06 - [TEST_STEP][PASSED] - openBrowser("https://bookit-qa6.com"): Browser is opened with url: 'https://bookit-qa6.com'
+
+2019-04-24 10:12:06 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2019-04-24 10:12:11 - [MESSAGE][PASSED] - Browser is opened with url: 'https://bookit-qa6.com'
+
+2019-04-24 10:12:11 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-24 10:12:14 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-24 10:12:14 - [TEST_STEP][PASSED] - click(findTestObject("homepage/flight_checkbox")): Object: 'Object Repository/homepage/flight_checkbox' is clicked on
+
+2019-04-24 10:12:15 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/flight_checkbox' is clicked on
+
+2019-04-24 10:12:15 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-24 10:12:18 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-24 10:12:18 - [TEST_STEP][PASSED] - setText(findTestObject("homepage/city_or_airport"), "cheese"): Text 'cheese' is set on object 'Object Repository/homepage/city_or_airport'
+
+2019-04-24 10:12:18 - [MESSAGE][PASSED] - Text 'cheese' is set on object 'Object Repository/homepage/city_or_airport'
+
+2019-04-24 10:12:18 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-24 10:12:21 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-24 10:12:21 - [TEST_STEP][PASSED] - click(findTestObject("homepage/div_Cheese City IL US")): Object: 'Object Repository/homepage/div_Cheese City IL US' is clicked on
+
+2019-04-24 10:12:21 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/div_Cheese City IL US' is clicked on
+
+2019-04-24 10:12:21 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-24 10:12:22 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-24 10:12:22 - [TEST_STEP][PASSED] - checkinId = getAttribute(findTestObject("homepage/checkin_date"), "id"): Attribute 'id' of object 'Object Repository/homepage/checkin_date' is: 'ember532-fd'
+
+2019-04-24 10:12:22 - [MESSAGE][PASSED] - Attribute 'id' of object 'Object Repository/homepage/checkin_date' is: 'ember532-fd'
+
+2019-04-24 10:12:22 - [TEST_STEP][PASSED] - checkoutId = getAttribute(findTestObject("homepage/checkout_date"), "id"): Attribute 'id' of object 'Object Repository/homepage/checkout_date' is: 'ember532-td'
+
+2019-04-24 10:12:22 - [MESSAGE][PASSED] - Attribute 'id' of object 'Object Repository/homepage/checkout_date' is: 'ember532-td'
+
+2019-04-24 10:12:22 - [TEST_STEP][PASSED] - myIniDate = "$('#" + checkinId + "').val('" + iniDate + "')": null
+
+2019-04-24 10:12:22 - [TEST_STEP][PASSED] - executeJavaScript(myIniDate, null): Execute JavaScript '$('#ember532-fd').val('07/07/2019')' successfully
+
+2019-04-24 10:12:22 - [MESSAGE][PASSED] - Execute JavaScript '$('#ember532-fd').val('07/07/2019')' successfully
+
+2019-04-24 10:12:22 - [TEST_STEP][PASSED] - myEndDate = "$('#" + checkoutId + "').val('" + endDate + "')": null
+
+2019-04-24 10:12:22 - [TEST_STEP][PASSED] - executeJavaScript(myEndDate, null): Execute JavaScript '$('#ember532-td').val('07/10/2019')' successfully
+
+2019-04-24 10:12:22 - [MESSAGE][PASSED] - Execute JavaScript '$('#ember532-td').val('07/10/2019')' successfully
+
+2019-04-24 10:12:22 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-24 10:12:23 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-24 10:12:23 - [TEST_STEP][PASSED] - click(findTestObject("homepage/button_Search")): Object: 'Object Repository/homepage/button_Search' is clicked on
+
+2019-04-24 10:12:26 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/button_Search' is clicked on
+
+2019-04-24 10:12:26 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-04-24 10:12:26 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-04-24 10:12:26 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-04-24 10:12:27 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-24 10:11:02 - [TEST_SUITE][PASSED] - TestSuiteForBookit: Test Cases/Booking01]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
