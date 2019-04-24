@@ -27,14 +27,38 @@
       <variableLink>
          <testDataLinkId>f7e73365-b322-4f70-b208-8a2baaf74b31</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>iniDate</value>
-         <variableId>b8490973-fe1c-4d11-8f9d-d124d18496b3</variableId>
+         <value>yrIni</value>
+         <variableId>ab8c4bf0-c3b1-4ec2-9fc8-09f839fd27c5</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>f7e73365-b322-4f70-b208-8a2baaf74b31</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>endDate</value>
-         <variableId>ededd428-d842-4de6-b07b-4fd213be21c4</variableId>
+         <value>moIni</value>
+         <variableId>d746ae44-0daf-4c4f-aa20-a76e07e170eb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>f7e73365-b322-4f70-b208-8a2baaf74b31</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>dayIni</value>
+         <variableId>3492a520-2b65-4530-ae8c-3b357a7e43f9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>f7e73365-b322-4f70-b208-8a2baaf74b31</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>yrEnd</value>
+         <variableId>d6db5a1d-4408-4a1a-a940-fff59b1132e8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>f7e73365-b322-4f70-b208-8a2baaf74b31</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>moEnd</value>
+         <variableId>a176ab3d-7a23-487d-b8ad-f1e8cc8880ff</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>f7e73365-b322-4f70-b208-8a2baaf74b31</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>dayEnd</value>
+         <variableId>6a316a87-7ad4-4df4-ad4e-94638f236d12</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

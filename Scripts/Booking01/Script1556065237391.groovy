@@ -33,9 +33,13 @@ checkinId = WebUI.getAttribute(findTestObject('homepage/checkin_date'), 'id')
 
 checkoutId = WebUI.getAttribute(findTestObject('homepage/checkout_date'), 'id')
 
+String iniDate = (((moIni + '/') + dayIni) + '/') + yrIni
+
 String myIniDate = ((('$(\'#' + checkinId) + '\').val(\'') + iniDate) + '\')'
 
 WebUI.executeJavaScript(myIniDate, null)
+
+String endDate = (((moEnd + '/') + dayEnd) + '/') + yrEnd
 
 String myEndDate = ((('$(\'#' + checkoutId) + '\').val(\'') + endDate) + '\')'
 
@@ -43,9 +47,12 @@ WebUI.executeJavaScript(myEndDate, null)
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('homepage/button_Search'))
+not_run: WebUI.click(findTestObject('homepage/button_Search'))
 
-WebUI.navigateToUrl('https://results.bookit-qa6.com/hotels.php?ap1=2&fd=2019-05-15&mp1=0&pt=h&rm=1&td=2019-05-18&tripType=hotel&hotelTo=Cheese%20City%2C%20IL%2C%20US&tl=CMI&areaId=1703&fromLocation=Panama%20City%2C%20FL%2C%20US%20(ECP)&fl=ECP')
+String redirUrl = ((((((((((('https://results.bookit-qa6.com/hotels.php?ap1=2&fd=' + yrIni) + '-') + moIni) + '-') + dayIni) + 
+'&mp1=0&pt=h&rm=1&td=') + yrEnd) + '-') + moEnd) + '-') + dayEnd) + '&tripType=hotel&hotelTo=Cheese%20City%2C%20IL%2C%20US&tl=CMI&areaId=1703&fromLocation=Panama%20City%2C%20FL%2C%20US%20(ECP)&fl=ECP'
+
+WebUI.navigateToUrl(redirUrl)
 
 WebUI.waitForPageLoad(5)
 
