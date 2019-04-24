@@ -1,0 +1,98 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuiteForBookit,Firefox 66.0,,2019-04-24 12:29:49,2019-04-24 12:31:24,1m - 35.099s,PASSED
+,,,,,,
+Test Cases/Booking01,Firefox 66.0,,2019-04-24 12:29:49,2019-04-24 12:30:17,27.144s,PASSED
+"openBrowser(""https://bookit-qa6.com"")",Firefox 66.0,,2019-04-24 12:29:50,2019-04-24 12:29:59,9.463s,PASSED
+delay(3),Firefox 66.0,,2019-04-24 12:29:59,2019-04-24 12:30:02,3.035s,PASSED
+"click(findTestObject(""homepage/flight_checkbox""))",Firefox 66.0,,2019-04-24 12:30:02,2019-04-24 12:30:04,1.352s,PASSED
+delay(3),Firefox 66.0,,2019-04-24 12:30:04,2019-04-24 12:30:04,0.002s,NOT_RUN
+"setText(findTestObject(""homepage/city_or_airport""), ""cheese"")",Firefox 66.0,,2019-04-24 12:30:04,2019-04-24 12:30:04,0.151s,PASSED
+delay(3),Firefox 66.0,,2019-04-24 12:30:04,2019-04-24 12:30:07,3.003s,PASSED
+"click(findTestObject(""homepage/div_Cheese City IL US""))",Firefox 66.0,,2019-04-24 12:30:07,2019-04-24 12:30:07,0.289s,PASSED
+delay(1),Firefox 66.0,,2019-04-24 12:30:07,2019-04-24 12:30:08,1.005s,PASSED
+"checkinId = getAttribute(findTestObject(""homepage/checkin_date""), ""id"")",Firefox 66.0,,2019-04-24 12:30:08,2019-04-24 12:30:08,0.066s,PASSED
+"checkoutId = getAttribute(findTestObject(""homepage/checkout_date""), ""id"")",Firefox 66.0,,2019-04-24 12:30:08,2019-04-24 12:30:08,0.049s,PASSED
+"iniDate = moIni + ""/"" + dayIni + ""/"" + yrIni",Firefox 66.0,,2019-04-24 12:30:08,2019-04-24 12:30:08,0.000s,PASSED
+"myIniDate = ""$('#"" + checkinId + ""').val('"" + iniDate + ""')""",Firefox 66.0,,2019-04-24 12:30:08,2019-04-24 12:30:08,0.000s,PASSED
+"executeJavaScript(myIniDate, null)",Firefox 66.0,,2019-04-24 12:30:08,2019-04-24 12:30:08,0.032s,PASSED
+"endDate = moEnd + ""/"" + dayEnd + ""/"" + yrEnd",Firefox 66.0,,2019-04-24 12:30:08,2019-04-24 12:30:08,0.001s,PASSED
+"myEndDate = ""$('#"" + checkoutId + ""').val('"" + endDate + ""')""",Firefox 66.0,,2019-04-24 12:30:08,2019-04-24 12:30:08,0.002s,PASSED
+"executeJavaScript(myEndDate, null)",Firefox 66.0,,2019-04-24 12:30:08,2019-04-24 12:30:08,0.014s,PASSED
+delay(1),Firefox 66.0,,2019-04-24 12:30:08,2019-04-24 12:30:09,1.005s,PASSED
+"click(findTestObject(""homepage/button_Search""))",Firefox 66.0,,2019-04-24 12:30:09,2019-04-24 12:30:09,0.010s,NOT_RUN
+"redirUrl = ""https://results.bookit-qa6.com/hotels.php?ap1=2&fd="" + yrIni + ""-"" + moIni + ""-"" + dayIni + ""&mp1=0&pt=h&rm=1&td="" + yrEnd + ""-"" + moEnd + ""-"" + dayEnd + ""&tripType=hotel&hotelTo=Cheese%20City%2C%20IL%2C%20US&tl=CMI&areaId=1703&fromLocation=Panama%20City%2C%20FL%2C%20US%20(ECP)&fl=ECP""",Firefox 66.0,,2019-04-24 12:30:09,2019-04-24 12:30:09,0.000s,PASSED
+navigateToUrl(redirUrl),Firefox 66.0,,2019-04-24 12:30:09,2019-04-24 12:30:13,3.546s,PASSED
+waitForPageLoad(5),Firefox 66.0,,2019-04-24 12:30:13,2019-04-24 12:30:13,0.136s,PASSED
+closeBrowser(),Firefox 66.0,,2019-04-24 12:30:13,2019-04-24 12:30:17,3.500s,PASSED
+,,,,,,
+Test Cases/Booking01,Firefox 66.0,,2019-04-24 12:30:17,2019-04-24 12:30:39,22.658s,PASSED
+"openBrowser(""https://bookit-qa6.com"")",Firefox 66.0,,2019-04-24 12:30:17,2019-04-24 12:30:24,7.320s,PASSED
+delay(3),Firefox 66.0,,2019-04-24 12:30:24,2019-04-24 12:30:27,3.004s,PASSED
+"click(findTestObject(""homepage/flight_checkbox""))",Firefox 66.0,,2019-04-24 12:30:27,2019-04-24 12:30:28,1.236s,PASSED
+delay(3),Firefox 66.0,,2019-04-24 12:30:28,2019-04-24 12:30:28,0.001s,NOT_RUN
+"setText(findTestObject(""homepage/city_or_airport""), ""cheese"")",Firefox 66.0,,2019-04-24 12:30:28,2019-04-24 12:30:28,0.157s,PASSED
+delay(3),Firefox 66.0,,2019-04-24 12:30:28,2019-04-24 12:30:31,3.002s,PASSED
+"click(findTestObject(""homepage/div_Cheese City IL US""))",Firefox 66.0,,2019-04-24 12:30:31,2019-04-24 12:30:32,0.307s,PASSED
+delay(1),Firefox 66.0,,2019-04-24 12:30:32,2019-04-24 12:30:33,1.005s,PASSED
+"checkinId = getAttribute(findTestObject(""homepage/checkin_date""), ""id"")",Firefox 66.0,,2019-04-24 12:30:33,2019-04-24 12:30:33,0.052s,PASSED
+"checkoutId = getAttribute(findTestObject(""homepage/checkout_date""), ""id"")",Firefox 66.0,,2019-04-24 12:30:33,2019-04-24 12:30:33,0.034s,PASSED
+"iniDate = moIni + ""/"" + dayIni + ""/"" + yrIni",Firefox 66.0,,2019-04-24 12:30:33,2019-04-24 12:30:33,0.001s,PASSED
+"myIniDate = ""$('#"" + checkinId + ""').val('"" + iniDate + ""')""",Firefox 66.0,,2019-04-24 12:30:33,2019-04-24 12:30:33,0.000s,PASSED
+"executeJavaScript(myIniDate, null)",Firefox 66.0,,2019-04-24 12:30:33,2019-04-24 12:30:33,0.013s,PASSED
+"endDate = moEnd + ""/"" + dayEnd + ""/"" + yrEnd",Firefox 66.0,,2019-04-24 12:30:33,2019-04-24 12:30:33,0.000s,PASSED
+"myEndDate = ""$('#"" + checkoutId + ""').val('"" + endDate + ""')""",Firefox 66.0,,2019-04-24 12:30:33,2019-04-24 12:30:33,0.001s,PASSED
+"executeJavaScript(myEndDate, null)",Firefox 66.0,,2019-04-24 12:30:33,2019-04-24 12:30:33,0.015s,PASSED
+delay(1),Firefox 66.0,,2019-04-24 12:30:33,2019-04-24 12:30:34,1.003s,PASSED
+"click(findTestObject(""homepage/button_Search""))",Firefox 66.0,,2019-04-24 12:30:34,2019-04-24 12:30:34,0.011s,NOT_RUN
+"redirUrl = ""https://results.bookit-qa6.com/hotels.php?ap1=2&fd="" + yrIni + ""-"" + moIni + ""-"" + dayIni + ""&mp1=0&pt=h&rm=1&td="" + yrEnd + ""-"" + moEnd + ""-"" + dayEnd + ""&tripType=hotel&hotelTo=Cheese%20City%2C%20IL%2C%20US&tl=CMI&areaId=1703&fromLocation=Panama%20City%2C%20FL%2C%20US%20(ECP)&fl=ECP""",Firefox 66.0,,2019-04-24 12:30:34,2019-04-24 12:30:34,0.000s,PASSED
+navigateToUrl(redirUrl),Firefox 66.0,,2019-04-24 12:30:34,2019-04-24 12:30:37,3.461s,PASSED
+waitForPageLoad(5),Firefox 66.0,,2019-04-24 12:30:37,2019-04-24 12:30:37,0.056s,PASSED
+closeBrowser(),Firefox 66.0,,2019-04-24 12:30:37,2019-04-24 12:30:39,1.943s,PASSED
+,,,,,,
+Test Cases/Booking01,Firefox 66.0,,2019-04-24 12:30:39,2019-04-24 12:31:02,22.760s,PASSED
+"openBrowser(""https://bookit-qa6.com"")",Firefox 66.0,,2019-04-24 12:30:39,2019-04-24 12:30:47,7.446s,PASSED
+delay(3),Firefox 66.0,,2019-04-24 12:30:47,2019-04-24 12:30:50,2.992s,PASSED
+"click(findTestObject(""homepage/flight_checkbox""))",Firefox 66.0,,2019-04-24 12:30:50,2019-04-24 12:30:51,0.953s,PASSED
+delay(3),Firefox 66.0,,2019-04-24 12:30:51,2019-04-24 12:30:51,0.000s,NOT_RUN
+"setText(findTestObject(""homepage/city_or_airport""), ""cheese"")",Firefox 66.0,,2019-04-24 12:30:51,2019-04-24 12:30:51,0.346s,PASSED
+delay(3),Firefox 66.0,,2019-04-24 12:30:51,2019-04-24 12:30:54,3.004s,PASSED
+"click(findTestObject(""homepage/div_Cheese City IL US""))",Firefox 66.0,,2019-04-24 12:30:54,2019-04-24 12:30:54,0.285s,PASSED
+delay(1),Firefox 66.0,,2019-04-24 12:30:54,2019-04-24 12:30:55,1.004s,PASSED
+"checkinId = getAttribute(findTestObject(""homepage/checkin_date""), ""id"")",Firefox 66.0,,2019-04-24 12:30:55,2019-04-24 12:30:55,0.053s,PASSED
+"checkoutId = getAttribute(findTestObject(""homepage/checkout_date""), ""id"")",Firefox 66.0,,2019-04-24 12:30:55,2019-04-24 12:30:55,0.047s,PASSED
+"iniDate = moIni + ""/"" + dayIni + ""/"" + yrIni",Firefox 66.0,,2019-04-24 12:30:55,2019-04-24 12:30:55,0.000s,PASSED
+"myIniDate = ""$('#"" + checkinId + ""').val('"" + iniDate + ""')""",Firefox 66.0,,2019-04-24 12:30:55,2019-04-24 12:30:55,0.001s,PASSED
+"executeJavaScript(myIniDate, null)",Firefox 66.0,,2019-04-24 12:30:55,2019-04-24 12:30:55,0.010s,PASSED
+"endDate = moEnd + ""/"" + dayEnd + ""/"" + yrEnd",Firefox 66.0,,2019-04-24 12:30:55,2019-04-24 12:30:55,0.000s,PASSED
+"myEndDate = ""$('#"" + checkoutId + ""').val('"" + endDate + ""')""",Firefox 66.0,,2019-04-24 12:30:55,2019-04-24 12:30:55,0.000s,PASSED
+"executeJavaScript(myEndDate, null)",Firefox 66.0,,2019-04-24 12:30:55,2019-04-24 12:30:55,0.012s,PASSED
+delay(1),Firefox 66.0,,2019-04-24 12:30:55,2019-04-24 12:30:56,1.002s,PASSED
+"click(findTestObject(""homepage/button_Search""))",Firefox 66.0,,2019-04-24 12:30:56,2019-04-24 12:30:56,0.010s,NOT_RUN
+"redirUrl = ""https://results.bookit-qa6.com/hotels.php?ap1=2&fd="" + yrIni + ""-"" + moIni + ""-"" + dayIni + ""&mp1=0&pt=h&rm=1&td="" + yrEnd + ""-"" + moEnd + ""-"" + dayEnd + ""&tripType=hotel&hotelTo=Cheese%20City%2C%20IL%2C%20US&tl=CMI&areaId=1703&fromLocation=Panama%20City%2C%20FL%2C%20US%20(ECP)&fl=ECP""",Firefox 66.0,,2019-04-24 12:30:56,2019-04-24 12:30:56,0.001s,PASSED
+navigateToUrl(redirUrl),Firefox 66.0,,2019-04-24 12:30:56,2019-04-24 12:31:00,3.428s,PASSED
+waitForPageLoad(5),Firefox 66.0,,2019-04-24 12:31:00,2019-04-24 12:31:00,0.059s,PASSED
+closeBrowser(),Firefox 66.0,,2019-04-24 12:31:00,2019-04-24 12:31:02,2.101s,PASSED
+,,,,,,
+Test Cases/Booking01,Firefox 66.0,,2019-04-24 12:31:02,2019-04-24 12:31:24,22.067s,PASSED
+"openBrowser(""https://bookit-qa6.com"")",Firefox 66.0,,2019-04-24 12:31:02,2019-04-24 12:31:09,7.075s,PASSED
+delay(3),Firefox 66.0,,2019-04-24 12:31:09,2019-04-24 12:31:12,3.003s,PASSED
+"click(findTestObject(""homepage/flight_checkbox""))",Firefox 66.0,,2019-04-24 12:31:12,2019-04-24 12:31:13,1.125s,PASSED
+delay(3),Firefox 66.0,,2019-04-24 12:31:13,2019-04-24 12:31:13,0.001s,NOT_RUN
+"setText(findTestObject(""homepage/city_or_airport""), ""cheese"")",Firefox 66.0,,2019-04-24 12:31:13,2019-04-24 12:31:13,0.146s,PASSED
+delay(3),Firefox 66.0,,2019-04-24 12:31:13,2019-04-24 12:31:16,3.003s,PASSED
+"click(findTestObject(""homepage/div_Cheese City IL US""))",Firefox 66.0,,2019-04-24 12:31:16,2019-04-24 12:31:17,0.333s,PASSED
+delay(1),Firefox 66.0,,2019-04-24 12:31:17,2019-04-24 12:31:18,1.004s,PASSED
+"checkinId = getAttribute(findTestObject(""homepage/checkin_date""), ""id"")",Firefox 66.0,,2019-04-24 12:31:18,2019-04-24 12:31:18,0.046s,PASSED
+"checkoutId = getAttribute(findTestObject(""homepage/checkout_date""), ""id"")",Firefox 66.0,,2019-04-24 12:31:18,2019-04-24 12:31:18,0.029s,PASSED
+"iniDate = moIni + ""/"" + dayIni + ""/"" + yrIni",Firefox 66.0,,2019-04-24 12:31:18,2019-04-24 12:31:18,0.000s,PASSED
+"myIniDate = ""$('#"" + checkinId + ""').val('"" + iniDate + ""')""",Firefox 66.0,,2019-04-24 12:31:18,2019-04-24 12:31:18,0.001s,PASSED
+"executeJavaScript(myIniDate, null)",Firefox 66.0,,2019-04-24 12:31:18,2019-04-24 12:31:18,0.011s,PASSED
+"endDate = moEnd + ""/"" + dayEnd + ""/"" + yrEnd",Firefox 66.0,,2019-04-24 12:31:18,2019-04-24 12:31:18,0.000s,PASSED
+"myEndDate = ""$('#"" + checkoutId + ""').val('"" + endDate + ""')""",Firefox 66.0,,2019-04-24 12:31:18,2019-04-24 12:31:18,0.001s,PASSED
+"executeJavaScript(myEndDate, null)",Firefox 66.0,,2019-04-24 12:31:18,2019-04-24 12:31:18,0.012s,PASSED
+delay(1),Firefox 66.0,,2019-04-24 12:31:18,2019-04-24 12:31:19,1.004s,PASSED
+"click(findTestObject(""homepage/button_Search""))",Firefox 66.0,,2019-04-24 12:31:19,2019-04-24 12:31:19,0.001s,NOT_RUN
+"redirUrl = ""https://results.bookit-qa6.com/hotels.php?ap1=2&fd="" + yrIni + ""-"" + moIni + ""-"" + dayIni + ""&mp1=0&pt=h&rm=1&td="" + yrEnd + ""-"" + moEnd + ""-"" + dayEnd + ""&tripType=hotel&hotelTo=Cheese%20City%2C%20IL%2C%20US&tl=CMI&areaId=1703&fromLocation=Panama%20City%2C%20FL%2C%20US%20(ECP)&fl=ECP""",Firefox 66.0,,2019-04-24 12:31:19,2019-04-24 12:31:19,0.001s,PASSED
+navigateToUrl(redirUrl),Firefox 66.0,,2019-04-24 12:31:19,2019-04-24 12:31:22,3.221s,PASSED
+waitForPageLoad(5),Firefox 66.0,,2019-04-24 12:31:22,2019-04-24 12:31:22,0.026s,PASSED
+closeBrowser(),Firefox 66.0,,2019-04-24 12:31:22,2019-04-24 12:31:24,2.010s,PASSED

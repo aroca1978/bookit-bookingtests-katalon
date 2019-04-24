@@ -13,13 +13,12 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+
 WebUI.openBrowser('https://bookit-qa6.com')
 
-WebUI.delay(3)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('homepage/flight_checkbox'))
-
-not_run: WebUI.delay(3)
 
 WebUI.setText(findTestObject('homepage/city_or_airport'), 'cheese')
 
@@ -37,24 +36,31 @@ String iniDate = (((moIni + '/') + dayIni) + '/') + yrIni
 
 String myIniDate = ((('$(\'#' + checkinId) + '\').val(\'') + iniDate) + '\')'
 
-WebUI.executeJavaScript(myIniDate, null)
-
+// WebUI.executeJavaScript(myIniDate, null)
 String endDate = (((moEnd + '/') + dayEnd) + '/') + yrEnd
 
 String myEndDate = ((('$(\'#' + checkoutId) + '\').val(\'') + endDate) + '\')'
+String strMoIni = CustomKeywords.'bookitKeywords.commonFunctions.getMonthName'(moIni)
+String strMoEnd = CustomKeywords.'bookitKeywords.commonFunctions.getMonthName'(moEnd)
 
-WebUI.executeJavaScript(myEndDate, null)
-
+//WebUI.executeJavaScript(myEndDate, null)
+WebUI.click(findTestObject('homepage/checkin_date'))
 WebUI.delay(1)
+//if (WebUI.verifyElementPresent(findTestObject('homepage/select_month1'))) {
+if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/select_month1'), strMoIni,
+	false, 20)) {
+	if ((WebUI.verifyOptionSelectedByLabel(findTestObject('homepage/select_month1'), strMoini, false, 
+    0, FailureHandling.CONTINUE_ON_FAILURE)) === false) {
+		WebUI.selectOptionByValue(findTestObject('homepage/select_month1'), strMoIni, false)
+	}
+}
+
+	//WebUI.selectOptionByLabel(findTestObject('homepage/select_month1'), strMoIni, false)
+//}
+
+WebUI.delay(3)
 
 not_run: WebUI.click(findTestObject('homepage/button_Search'))
 
-String redirUrl = ((((((((((('https://results.bookit-qa6.com/hotels.php?ap1=2&fd=' + yrIni) + '-') + moIni) + '-') + dayIni) + 
-'&mp1=0&pt=h&rm=1&td=') + yrEnd) + '-') + moEnd) + '-') + dayEnd) + '&tripType=hotel&hotelTo=Cheese%20City%2C%20IL%2C%20US&tl=CMI&areaId=1703&fromLocation=Panama%20City%2C%20FL%2C%20US%20(ECP)&fl=ECP'
-
-WebUI.navigateToUrl(redirUrl)
-
-WebUI.waitForPageLoad(5)
-
-WebUI.closeBrowser()
+not_run: WebUI.closeBrowser()
 
