@@ -43,25 +43,46 @@ String strMoIni = CustomKeywords.'bookitKeywords.commonFunctions.getMonthName'(m
 
 String strMoEnd = CustomKeywords.'bookitKeywords.commonFunctions.getMonthName'(moEnd)
 
-//WebUI.executeJavaScript(myEndDate, null)
+
 WebUI.click(findTestObject('homepage/checkin_date'))
 
 WebUI.delay(1)
 
+if (WebUI.verifyElementPresent(findTestObject('homepage/sel_date_month1'), 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+	//WebUI.takeScreenshot('Screenshots/seldate.png')
+	if (WebUI.waitForElementClickable(findTestObject('homepage/sel_date_month1'), 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+    WebUI.click(findTestObject('homepage/sel_date_month1'), FailureHandling.CONTINUE_ON_FAILURE)
+		// WebUI.delay(1)
 
-if (WebUI.verifyElementPresent(findTestObject('homepage/sel_date01'), 1, FailureHandling.CONTINUE_ON_FAILURE)) {
-	//WebUI.click(findTestObject('homepage/sel_date01'))
-	if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/sel_date01'), strMoIni, false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
-		WebUI.selectOptionByLabel(findTestObject('homepage/sel_date01'), strMoIni, false, FailureHandling.CONTINUE_ON_FAILURE)
+    if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/sel_date_month1'), strMoIni, false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+		// WebUI.scrollToElement('homepage/sel_date_month1', 1, FailureHandling.CONTINUE_ON_FAILURE)
+		WebUI.selectOptionByLabel(findTestObject('homepage/sel_date_month1'), strMoIni, false, FailureHandling.CONTINUE_ON_FAILURE)
+		WebUI.delay(1)
+	}
+    
+	}
+}
+if (WebUI.verifyElementPresent(findTestObject('homepage/sel_date_year1'), 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+	//WebUI.takeScreenshot('Screenshots/seldate.png')
+	if (WebUI.waitForElementClickable(findTestObject('homepage/sel_date_year1'), 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+	WebUI.click(findTestObject('homepage/sel_date_year1'), FailureHandling.CONTINUE_ON_FAILURE)
+		// WebUI.delay(1)
+
+	if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/sel_date_year1'), yrIni, false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+		// WebUI.scrollToElement('homepage/sel_date_month1', 1, FailureHandling.CONTINUE_ON_FAILURE)
+		WebUI.selectOptionByLabel(findTestObject('homepage/sel_date_year1'), yrIni, false, FailureHandling.CONTINUE_ON_FAILURE)
+		WebUI.delay(1)
+	}
+	
 	}
 }
 
-//if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/selmonth1'), strMoIni, false, 1)) {
-//	WebUI.selectOptionByLabel(findTestObject('homepage/selmonth1'), strMoIni, false)
-//}
-not_run: WebUI.delay(3)
+
+WebUI.click(findTestObject('homepage/button_day1', [('data-pika-year'): '2019', ('data-pika-month'): '4', ('data-pika-day'): '3']))
+WebUI.delay(2)
+
 
 not_run: WebUI.click(findTestObject('homepage/button_Search'))
 
-WebUI.closeBrowser()
+// WebUI.closeBrowser()
 

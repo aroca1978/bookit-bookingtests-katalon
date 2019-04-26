@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_date1</name>
+   <name>button_day1</name>
    <tag></tag>
    <elementGuidId>5c9a2e87-7bdb-4976-8c13-d186f0cb68f5</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button']) = count(//*[@type = 'button'])]</value>
+      </entry>
       <entry>
          <key>XPATH</key>
          <value>(//button[@type='button'])[44]</value>
@@ -13,7 +17,7 @@
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -21,10 +25,10 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>contains</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>pika-button pika-day</value>
+      <value>pika-day</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -34,39 +38,39 @@
       <value>button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-pika-year</name>
       <type>Main</type>
       <value>2019</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-pika-month</name>
       <type>Main</type>
       <value>3</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-pika-day</name>
       <type>Main</type>
       <value>26</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>26</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[@class=&quot;ember-application has-header&quot;]/div[@class=&quot;pika-single is-bound left-aligned bottom-aligned&quot;]/div[@class=&quot;pika-lendar&quot;]/table[@class=&quot;pika-table&quot;]/tbody[1]/tr[@class=&quot;pika-row&quot;]/td[6]/button[@class=&quot;pika-button pika-day&quot;]</value>
+      <value>//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
