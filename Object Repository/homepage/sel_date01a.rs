@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_month1</name>
+   <name>sel_date01a</name>
    <tag></tag>
-   <elementGuidId>e377f4ec-e293-46cb-a1cf-a14f28e3d43c</elementGuidId>
+   <elementGuidId>ab24b974-f248-4474-8077-4451cb06bc05</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//select[@class = 'pika-select pika-select-month' and (text() = 'JanuaryFebruaryMarchAprilMayJuneJulyAugustSeptemberOctoberNovemberDecember' or . = 'JanuaryFebruaryMarchAprilMayJuneJulyAugustSeptemberOctoberNovemberDecember')]</value>
+         <key>CSS</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pika-title-qr']/div/select</value>
+         <value>//div[@id='pika-title-jt']/div/select</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//select[@class = 'pika-select pika-select-month' and @tabindex = '-1']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -24,7 +27,7 @@
       <value>select</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
@@ -38,7 +41,7 @@
       <value>-1</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
@@ -49,13 +52,13 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[@class=&quot;ember-application has-header&quot;]/div[@class=&quot;pika-single is-bound left-aligned bottom-aligned&quot;]/div[@class=&quot;pika-lendar&quot;]/div[@id=&quot;pika-title-qr&quot;]/div[@class=&quot;pika-label&quot;]/select[@class=&quot;pika-select pika-select-month&quot;]</value>
+      <value>/html[1]/body[@class=&quot;ember-application has-header&quot;]/div[@class=&quot;pika-single is-bound left-aligned bottom-aligned&quot;]/div[@class=&quot;pika-lendar&quot;]/div[@id=&quot;pika-title-jt&quot;]/div[@class=&quot;pika-label&quot;]/select[@class=&quot;pika-select pika-select-month&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>//div[@id='pika-title-qr']/div/select</value>
+      <value>//div[@id='pika-title-jt']/div/select</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

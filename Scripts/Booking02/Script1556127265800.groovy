@@ -13,21 +13,19 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-
 WebUI.openBrowser('https://bookit-qa6.com')
 
-WebUI.delay(2)
-
+//WebUI.delay(2)
 WebUI.click(findTestObject('homepage/flight_checkbox'))
 
-WebUI.setText(findTestObject('homepage/city_or_airport'), 'cheese')
+/* WebUI.setText(findTestObject('homepage/city_or_airport'), 'cheese')
 
-WebUI.delay(3)
+WebUI.delay(1)
 
 WebUI.click(findTestObject('homepage/div_Cheese City IL US'))
 
 WebUI.delay(1)
-
+*/
 checkinId = WebUI.getAttribute(findTestObject('homepage/checkin_date'), 'id')
 
 checkoutId = WebUI.getAttribute(findTestObject('homepage/checkout_date'), 'id')
@@ -40,27 +38,30 @@ String myIniDate = ((('$(\'#' + checkinId) + '\').val(\'') + iniDate) + '\')'
 String endDate = (((moEnd + '/') + dayEnd) + '/') + yrEnd
 
 String myEndDate = ((('$(\'#' + checkoutId) + '\').val(\'') + endDate) + '\')'
+
 String strMoIni = CustomKeywords.'bookitKeywords.commonFunctions.getMonthName'(moIni)
+
 String strMoEnd = CustomKeywords.'bookitKeywords.commonFunctions.getMonthName'(moEnd)
 
 //WebUI.executeJavaScript(myEndDate, null)
 WebUI.click(findTestObject('homepage/checkin_date'))
+
 WebUI.delay(1)
-//if (WebUI.verifyElementPresent(findTestObject('homepage/select_month1'))) {
-if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/select_month1'), strMoIni,
-	false, 20)) {
-	if ((WebUI.verifyOptionSelectedByLabel(findTestObject('homepage/select_month1'), strMoini, false, 
-    0, FailureHandling.CONTINUE_ON_FAILURE)) === false) {
-		WebUI.selectOptionByValue(findTestObject('homepage/select_month1'), strMoIni, false)
+
+
+if (WebUI.verifyElementPresent(findTestObject('homepage/sel_date01'), 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+	//WebUI.click(findTestObject('homepage/sel_date01'))
+	if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/sel_date01'), strMoIni, false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+		WebUI.selectOptionByLabel(findTestObject('homepage/sel_date01'), strMoIni, false, FailureHandling.CONTINUE_ON_FAILURE)
 	}
 }
 
-	//WebUI.selectOptionByLabel(findTestObject('homepage/select_month1'), strMoIni, false)
+//if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/selmonth1'), strMoIni, false, 1)) {
+//	WebUI.selectOptionByLabel(findTestObject('homepage/selmonth1'), strMoIni, false)
 //}
-
-WebUI.delay(3)
+not_run: WebUI.delay(3)
 
 not_run: WebUI.click(findTestObject('homepage/button_Search'))
 
-not_run: WebUI.closeBrowser()
+WebUI.closeBrowser()
 
