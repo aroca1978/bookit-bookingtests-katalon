@@ -20,7 +20,7 @@
       <name>moIni</name>
    </variable>
    <variable>
-      <defaultValue>'15'</defaultValue>
+      <defaultValue>'03'</defaultValue>
       <description></description>
       <id>0de39b29-df30-479a-8662-4ce002d32332</id>
       <masked>false</masked>

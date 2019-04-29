@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuiteForBookit,IE 11,,2019-04-29 14:26:22,2019-04-29 14:26:52,29.901s,FAILED
+,,,,,,
+Test Cases/Booking02,IE 11,,2019-04-29 14:26:22,2019-04-29 14:26:37,14.343s,FAILED
+"openBrowser(""https://bookit-qa6.com"")",IE 11,,2019-04-29 14:26:23,2019-04-29 14:26:35,12.387s,PASSED
+"click(findTestObject(""homepage/flight_checkbox""))",IE 11,,2019-04-29 14:26:35,2019-04-29 14:26:37,1.281s,FAILED
+,,,,,,
+Test Cases/Booking02,IE 11,,2019-04-29 14:26:37,2019-04-29 14:26:43,6.046s,FAILED
+"openBrowser(""https://bookit-qa6.com"")",IE 11,,2019-04-29 14:26:37,2019-04-29 14:26:42,5.093s,PASSED
+"click(findTestObject(""homepage/flight_checkbox""))",IE 11,,2019-04-29 14:26:42,2019-04-29 14:26:43,0.902s,FAILED
+,,,,,,
+Test Cases/Booking02,IE 11,,2019-04-29 14:26:43,2019-04-29 14:26:47,3.831s,FAILED
+"openBrowser(""https://bookit-qa6.com"")",IE 11,,2019-04-29 14:26:43,2019-04-29 14:26:46,2.886s,PASSED
+"click(findTestObject(""homepage/flight_checkbox""))",IE 11,,2019-04-29 14:26:46,2019-04-29 14:26:47,0.881s,FAILED
+,,,,,,
+Test Cases/Booking02,IE 11,,2019-04-29 14:26:47,2019-04-29 14:26:51,4.751s,FAILED
+"openBrowser(""https://bookit-qa6.com"")",IE 11,,2019-04-29 14:26:47,2019-04-29 14:26:51,3.833s,PASSED
+"click(findTestObject(""homepage/flight_checkbox""))",IE 11,,2019-04-29 14:26:51,2019-04-29 14:26:51,0.864s,FAILED

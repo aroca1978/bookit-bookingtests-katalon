@@ -11,13 +11,13 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>b1a4aea4-97aa-4ba2-a95c-c8ee6e5ec069</testSuiteGuid>
    <testCaseLink>
-      <guid>7293a074-36c6-4317-b59c-33118012d8f2</guid>
+      <guid>53399181-33e4-4684-b8c6-7da9bc11dbbf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Booking01</testCaseId>
+      <testCaseId>Test Cases/Booking02</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>f7e73365-b322-4f70-b208-8a2baaf74b31</id>
+         <id>a7e0fb0d-ed4f-46c9-9e59-e391e2bf1efd</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
             <value></value>
@@ -25,40 +25,40 @@
          <testDataId>Data Files/myDates</testDataId>
       </testDataLink>
       <variableLink>
-         <testDataLinkId>f7e73365-b322-4f70-b208-8a2baaf74b31</testDataLinkId>
+         <testDataLinkId>a7e0fb0d-ed4f-46c9-9e59-e391e2bf1efd</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>yrIni</value>
-         <variableId>ab8c4bf0-c3b1-4ec2-9fc8-09f839fd27c5</variableId>
+         <variableId>4a5433bb-ffe2-47b2-9441-1409fd3b115e</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>f7e73365-b322-4f70-b208-8a2baaf74b31</testDataLinkId>
+         <testDataLinkId>a7e0fb0d-ed4f-46c9-9e59-e391e2bf1efd</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>moIni</value>
-         <variableId>d746ae44-0daf-4c4f-aa20-a76e07e170eb</variableId>
+         <variableId>75549eea-e231-41b5-b04e-c402ec1ca764</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>f7e73365-b322-4f70-b208-8a2baaf74b31</testDataLinkId>
+         <testDataLinkId>a7e0fb0d-ed4f-46c9-9e59-e391e2bf1efd</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>dayIni</value>
-         <variableId>3492a520-2b65-4530-ae8c-3b357a7e43f9</variableId>
+         <variableId>0de39b29-df30-479a-8662-4ce002d32332</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>f7e73365-b322-4f70-b208-8a2baaf74b31</testDataLinkId>
+         <testDataLinkId>a7e0fb0d-ed4f-46c9-9e59-e391e2bf1efd</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>yrEnd</value>
-         <variableId>d6db5a1d-4408-4a1a-a940-fff59b1132e8</variableId>
+         <variableId>f1666ecf-86f6-44ad-be12-97be11345cde</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>f7e73365-b322-4f70-b208-8a2baaf74b31</testDataLinkId>
+         <testDataLinkId>a7e0fb0d-ed4f-46c9-9e59-e391e2bf1efd</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>moEnd</value>
-         <variableId>a176ab3d-7a23-487d-b8ad-f1e8cc8880ff</variableId>
+         <variableId>118e3208-6f1c-4002-ae07-9d2ee7ef5e0f</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>f7e73365-b322-4f70-b208-8a2baaf74b31</testDataLinkId>
+         <testDataLinkId>a7e0fb0d-ed4f-46c9-9e59-e391e2bf1efd</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>dayEnd</value>
-         <variableId>6a316a87-7ad4-4df4-ad4e-94638f236d12</variableId>
+         <variableId>e99748c3-ab61-4c0d-85b5-cf8a299b2977</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

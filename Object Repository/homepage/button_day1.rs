@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button']) = count(//*[@type = 'button'])]</value>
+         <value>//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '26']) = count(//*[@type = 'button' and @data-pika-day = '26'])]</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -31,7 +31,7 @@
       <value>pika-day</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
@@ -70,7 +70,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button</value>
+      <value>//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '26']) = count(//*[@type = 'button' and @data-pika-day = '26'])]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

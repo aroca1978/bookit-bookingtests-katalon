@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>//input[@id='ember532-td']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@type = 'text' and @placeholder = 'MM/DD/YYYY' and @id = 'ember532-td']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

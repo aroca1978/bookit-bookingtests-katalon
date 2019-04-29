@@ -13,19 +13,24 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+import com.kms.katalon.core.logging.KeywordLogger
+import com.kms.katalon.core.testobject.ConditionType
+
+
+
+
 WebUI.openBrowser('https://bookit-qa6.com')
 
-//WebUI.delay(2)
 WebUI.click(findTestObject('homepage/flight_checkbox'))
 
-/* WebUI.setText(findTestObject('homepage/city_or_airport'), 'cheese')
+WebUI.setText(findTestObject('homepage/city_or_airport'), 'cheese')
 
 WebUI.delay(1)
 
 WebUI.click(findTestObject('homepage/div_Cheese City IL US'))
 
-WebUI.delay(1)
-*/
+//WebUI.delay(1)
+
 checkinId = WebUI.getAttribute(findTestObject('homepage/checkin_date'), 'id')
 
 checkoutId = WebUI.getAttribute(findTestObject('homepage/checkout_date'), 'id')
@@ -43,6 +48,12 @@ String strMoIni = CustomKeywords.'bookitKeywords.commonFunctions.getMonthName'(m
 
 String strMoEnd = CustomKeywords.'bookitKeywords.commonFunctions.getMonthName'(moEnd)
 
+int dIni = Integer.parseInt(dayIni)
+int dEnd = Integer.parseInt(dayEnd)
+
+println(dIni)
+println(dEnd)
+// CHECKIN DATE
 
 WebUI.click(findTestObject('homepage/checkin_date'))
 
@@ -50,39 +61,75 @@ WebUI.delay(1)
 
 if (WebUI.verifyElementPresent(findTestObject('homepage/sel_date_month1'), 1, FailureHandling.CONTINUE_ON_FAILURE)) {
 	//WebUI.takeScreenshot('Screenshots/seldate.png')
+	
 	if (WebUI.waitForElementClickable(findTestObject('homepage/sel_date_month1'), 1, FailureHandling.CONTINUE_ON_FAILURE)) {
-    WebUI.click(findTestObject('homepage/sel_date_month1'), FailureHandling.CONTINUE_ON_FAILURE)
-		// WebUI.delay(1)
-
-    if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/sel_date_month1'), strMoIni, false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
-		// WebUI.scrollToElement('homepage/sel_date_month1', 1, FailureHandling.CONTINUE_ON_FAILURE)
-		WebUI.selectOptionByLabel(findTestObject('homepage/sel_date_month1'), strMoIni, false, FailureHandling.CONTINUE_ON_FAILURE)
-		WebUI.delay(1)
-	}
-    
+		WebUI.click(findTestObject('homepage/sel_date_month1'), FailureHandling.CONTINUE_ON_FAILURE)
+	    if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/sel_date_month1'), strMoIni, false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+			WebUI.selectOptionByLabel(findTestObject('homepage/sel_date_month1'), strMoIni, false, FailureHandling.CONTINUE_ON_FAILURE)
+			WebUI.delay(1)
+		}	
 	}
 }
 if (WebUI.verifyElementPresent(findTestObject('homepage/sel_date_year1'), 1, FailureHandling.CONTINUE_ON_FAILURE)) {
 	//WebUI.takeScreenshot('Screenshots/seldate.png')
 	if (WebUI.waitForElementClickable(findTestObject('homepage/sel_date_year1'), 1, FailureHandling.CONTINUE_ON_FAILURE)) {
-	WebUI.click(findTestObject('homepage/sel_date_year1'), FailureHandling.CONTINUE_ON_FAILURE)
-		// WebUI.delay(1)
-
-	if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/sel_date_year1'), yrIni, false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
-		// WebUI.scrollToElement('homepage/sel_date_month1', 1, FailureHandling.CONTINUE_ON_FAILURE)
-		WebUI.selectOptionByLabel(findTestObject('homepage/sel_date_year1'), yrIni, false, FailureHandling.CONTINUE_ON_FAILURE)
-		WebUI.delay(1)
-	}
+		WebUI.click(findTestObject('homepage/sel_date_year1'), FailureHandling.CONTINUE_ON_FAILURE)
+	
+		if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/sel_date_year1'), yrIni, false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+			WebUI.selectOptionByLabel(findTestObject('homepage/sel_date_year1'), yrIni, false, FailureHandling.CONTINUE_ON_FAILURE)
+			WebUI.delay(1)
+		}
 	
 	}
 }
 
+String dynxpath = "//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '" + dIni + "']) = count(//*[@type = 'button' and @data-pika-day = '" + dIni + "'])]"
 
-WebUI.click(findTestObject('homepage/button_day1', [('data-pika-year'): '2019', ('data-pika-month'): '4', ('data-pika-day'): '3']))
-WebUI.delay(2)
+TestObject to = new TestObject("eldia")
+to.addProperty("xpath", ConditionType.EQUALS, dynxpath)
+WebUI.click(to)
+//WebUI.delay(1)
 
 
-not_run: WebUI.click(findTestObject('homepage/button_Search'))
+// CHECKOUT DATE
 
-// WebUI.closeBrowser()
+WebUI.click(findTestObject('homepage/checkout_date'))
+WebUI.delay(1)
+
+if (WebUI.verifyElementPresent(findTestObject('homepage/sel_date_month2'), 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+	//WebUI.takeScreenshot('Screenshots/seldate.png')
+	
+	if (WebUI.waitForElementClickable(findTestObject('homepage/sel_date_month2'), 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+		WebUI.click(findTestObject('homepage/sel_date_month2'), FailureHandling.CONTINUE_ON_FAILURE)
+		if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/sel_date_month2'), strMoEnd, false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+			WebUI.selectOptionByLabel(findTestObject('homepage/sel_date_month2'), strMoEnd, false, FailureHandling.CONTINUE_ON_FAILURE)
+			WebUI.delay(1)
+		}
+	}
+}
+if (WebUI.verifyElementPresent(findTestObject('homepage/sel_date_year2'), 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+	//WebUI.takeScreenshot('Screenshots/seldate.png')
+	if (WebUI.waitForElementClickable(findTestObject('homepage/sel_date_year2'), 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+		WebUI.click(findTestObject('homepage/sel_date_year2'), FailureHandling.CONTINUE_ON_FAILURE)
+	
+		if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/sel_date_year2'), yrEnd, false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+			WebUI.selectOptionByLabel(findTestObject('homepage/sel_date_year2'), yrEnd, false, FailureHandling.CONTINUE_ON_FAILURE)
+			WebUI.delay(1)
+		}
+	
+	}
+}
+
+String dynxpath2 = "//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '" + dEnd + "']) = count(//*[@type = 'button' and @data-pika-day = '" + dEnd + "'])]"
+
+TestObject to2 = new TestObject("eldia2")
+to2.addProperty("xpath", ConditionType.EQUALS, dynxpath2)
+WebUI.click(to2)
+//WebUI.delay(2)
+
+
+WebUI.click(findTestObject('homepage/button_Search'))
+WebUI.waitForPageLoad(10)
+//WebUI.delay(5)
+WebUI.closeBrowser()
 
