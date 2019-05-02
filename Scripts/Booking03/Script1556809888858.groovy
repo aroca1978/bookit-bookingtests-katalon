@@ -77,7 +77,7 @@ if (WebUI.verifyElementPresent(findTestObject('homepage/sel_date_year1'), 1, Fai
 	
 		if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/sel_date_year1'), yrIni, false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
 			WebUI.selectOptionByLabel(findTestObject('homepage/sel_date_year1'), yrIni, false, FailureHandling.CONTINUE_ON_FAILURE)
-			WebUI.delay(2)
+			WebUI.delay(1)
 		}
 	
 	}
@@ -103,7 +103,7 @@ if (WebUI.verifyElementPresent(findTestObject('homepage/sel_date_month2'), 1, Fa
 		WebUI.click(findTestObject('homepage/sel_date_month2'), FailureHandling.CONTINUE_ON_FAILURE)
 		if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/sel_date_month2'), strMoEnd, false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
 			WebUI.selectOptionByLabel(findTestObject('homepage/sel_date_month2'), strMoEnd, false, FailureHandling.CONTINUE_ON_FAILURE)
-			WebUI.delay(2)
+			WebUI.delay(1)
 		}
 	}
 }
@@ -125,12 +125,39 @@ String dynxpath2 = "//div[contains(@class, 'pika-single') and contains(@class, '
 TestObject to2 = new TestObject("eldia2")
 to2.addProperty("xpath", ConditionType.EQUALS, dynxpath2)
 WebUI.click(to2)
-//WebUI.delay(2)
+//
+
+// ROOMS
+//WebUI.click(findTestObject('homepage/select_rooms'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.selectOptionByValue(findTestObject('homepage/select_rooms'), numRooms, false, FailureHandling.CONTINUE_ON_FAILURE)
+
+def tadults = adults.split(",")
+int tnumrooms = Integer.parseInt(numRooms)
+println(tnumrooms);
+println tadults;
+
+for (int i=1; i<=tnumrooms; i++) {
+	TestObject na = new TestObject("numadults")
+	String nadynxpath = "//select[@name='ap" + i + "']"
+	na.addProperty("xpath", ConditionType.EQUALS, nadynxpath)
+	
+	if (WebUI.verifyElementPresent(na, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+		println("I'm here")
+		WebUI.click(na)
+		
+		if (WebUI.verifyOptionPresentByValue(na, tadults[i-1], false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+			println("Now I am here")
+			WebUI.selectOptionByValue(na, tadults[i-1], false, FailureHandling.CONTINUE_ON_FAILURE)
+		}
+	}
+}
 
 
+WebUI.delay(5)
 
-WebUI.click(findTestObject('homepage/button_Search'))
-WebUI.waitForPageLoad(10)
+
+//WebUI.click(findTestObject('homepage/button_Search'))
+//WebUI.waitForPageLoad(10)
 //WebUI.delay(5)
 WebUI.closeBrowser()
 

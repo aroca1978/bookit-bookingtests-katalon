@@ -6,6 +6,10 @@
    <elementGuidId>bf830376-9ca1-44f0-b629-5aa8540b5c3a</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//select[@name = 'ap1']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//select[@name='ap1']</value>
       </entry>
@@ -41,7 +45,7 @@
       <value>form-control at-ts-adults-room-1</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
