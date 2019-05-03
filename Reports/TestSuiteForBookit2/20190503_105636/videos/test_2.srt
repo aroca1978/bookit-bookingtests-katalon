@@ -1,0 +1,258 @@
+1
+00:00:00,000 --> 00:00:00,000
+1. openBrowser("https://bookit-qa6.com")
+
+2
+00:00:06,064 --> 00:00:06,064
+5. click(findTestObject("homepage/flight_checkbox"))
+
+3
+00:00:08,127 --> 00:00:08,127
+9. setText(findTestObject("homepage/city_or_airport"), "cheese")
+
+4
+00:00:08,839 --> 00:00:08,840
+13. delay(1)
+
+5
+00:00:09,844 --> 00:00:09,845
+17. click(findTestObject("homepage/div_Cheese City IL US"))
+
+6
+00:00:09,961 --> 00:00:09,962
+21. checkinId = getAttribute(findTestObject("homepage/checkin_date"), "id")
+
+7
+00:00:10,013 --> 00:00:10,013
+25. checkoutId = getAttribute(findTestObject("homepage/checkout_date"), "id")
+
+8
+00:00:10,049 --> 00:00:10,050
+29. iniDate = moIni + "/" + dayIni + "/" + yrIni
+
+9
+00:00:10,051 --> 00:00:10,052
+33. myIniDate = "$('#" + checkinId + "').val('" + iniDate + "')"
+
+10
+00:00:10,053 --> 00:00:10,054
+37. endDate = moEnd + "/" + dayEnd + "/" + yrEnd
+
+11
+00:00:10,055 --> 00:00:10,055
+41. myEndDate = "$('#" + checkoutId + "').val('" + endDate + "')"
+
+12
+00:00:10,056 --> 00:00:10,057
+45. strMoIni = bookitKeywords.commonFunctions.getMonthName(moIni)
+
+13
+00:00:10,059 --> 00:00:10,059
+49. strMoEnd = bookitKeywords.commonFunctions.getMonthName(moEnd)
+
+14
+00:00:10,061 --> 00:00:10,061
+53. dIni = Integer.parseInt(dayIni)
+
+15
+00:00:10,063 --> 00:00:10,063
+57. dEnd = Integer.parseInt(dayEnd)
+
+16
+00:00:10,064 --> 00:00:10,064
+61. println(dIni)
+
+17
+00:00:10,065 --> 00:00:10,066
+65. println(dEnd)
+
+18
+00:00:10,067 --> 00:00:10,067
+69. click(findTestObject("homepage/checkin_date"))
+
+19
+00:00:10,204 --> 00:00:10,205
+73. delay(1)
+
+20
+00:00:11,210 --> 00:00:11,211
+77. if (verifyElementPresent(findTestObject("homepage/sel_date_month1"), 1, CONTINUE_ON_FAILURE))
+
+21
+00:00:11,247 --> 00:00:11,247
+1. if (waitForElementClickable(findTestObject("homepage/sel_date_month1"), 1, CONTINUE_ON_FAILURE))
+
+22
+00:00:11,309 --> 00:00:11,309
+1. click(findTestObject("homepage/sel_date_month1"), CONTINUE_ON_FAILURE)
+
+23
+00:00:11,416 --> 00:00:11,417
+5. if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_month1"), strMoIni, false, 1, CONTINUE_ON_FAILURE))
+
+24
+00:00:11,733 --> 00:00:11,734
+1. selectOptionByLabel(findTestObject("homepage/sel_date_month1"), strMoIni, false, CONTINUE_ON_FAILURE)
+
+25
+00:00:11,889 --> 00:00:11,890
+5. delay(1)
+
+26
+00:00:12,894 --> 00:00:12,895
+81. if (verifyElementPresent(findTestObject("homepage/sel_date_year1"), 1, CONTINUE_ON_FAILURE))
+
+27
+00:00:12,979 --> 00:00:12,979
+1. if (waitForElementClickable(findTestObject("homepage/sel_date_year1"), 1, CONTINUE_ON_FAILURE))
+
+28
+00:00:13,028 --> 00:00:13,028
+1. click(findTestObject("homepage/sel_date_year1"), CONTINUE_ON_FAILURE)
+
+29
+00:00:13,184 --> 00:00:13,185
+5. if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_year1"), yrIni, false, 1, CONTINUE_ON_FAILURE))
+
+30
+00:00:13,309 --> 00:00:13,310
+1. selectOptionByLabel(findTestObject("homepage/sel_date_year1"), yrIni, false, CONTINUE_ON_FAILURE)
+
+31
+00:00:13,374 --> 00:00:13,374
+5. delay(1)
+
+32
+00:00:14,377 --> 00:00:14,378
+85. dynxpath = "//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '" + dIni + "']) = count(//*[@type = 'button' and @data-pika-day = '" + dIni + "'])]"
+
+33
+00:00:14,379 --> 00:00:14,380
+89. to = new com.kms.katalon.core.testobject.TestObject(eldia)
+
+34
+00:00:14,411 --> 00:00:14,411
+93. to.addProperty("xpath", EQUALS, dynxpath)
+
+35
+00:00:14,411 --> 00:00:14,411
+97. click(to)
+
+36
+00:00:14,678 --> 00:00:14,678
+101. click(findTestObject("homepage/checkout_date"))
+
+37
+00:00:14,804 --> 00:00:14,805
+105. delay(1)
+
+38
+00:00:15,810 --> 00:00:15,811
+109. if (verifyElementPresent(findTestObject("homepage/sel_date_month2"), 1, CONTINUE_ON_FAILURE))
+
+39
+00:00:15,847 --> 00:00:15,847
+1. if (waitForElementClickable(findTestObject("homepage/sel_date_month2"), 1, CONTINUE_ON_FAILURE))
+
+40
+00:00:15,896 --> 00:00:15,896
+1. click(findTestObject("homepage/sel_date_month2"), CONTINUE_ON_FAILURE)
+
+41
+00:00:16,045 --> 00:00:16,046
+5. if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_month2"), strMoEnd, false, 1, CONTINUE_ON_FAILURE))
+
+42
+00:00:16,383 --> 00:00:16,384
+1. selectOptionByLabel(findTestObject("homepage/sel_date_month2"), strMoEnd, false, CONTINUE_ON_FAILURE)
+
+43
+00:00:16,523 --> 00:00:16,524
+5. delay(1)
+
+44
+00:00:17,529 --> 00:00:17,530
+113. if (verifyElementPresent(findTestObject("homepage/sel_date_year2"), 1, CONTINUE_ON_FAILURE))
+
+45
+00:00:17,577 --> 00:00:17,577
+1. if (waitForElementClickable(findTestObject("homepage/sel_date_year2"), 1, CONTINUE_ON_FAILURE))
+
+46
+00:00:17,609 --> 00:00:17,626
+1. click(findTestObject("homepage/sel_date_year2"), CONTINUE_ON_FAILURE)
+
+47
+00:00:17,743 --> 00:00:17,744
+5. if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_year2"), yrEnd, false, 1, CONTINUE_ON_FAILURE))
+
+48
+00:00:17,927 --> 00:00:17,927
+1. selectOptionByLabel(findTestObject("homepage/sel_date_year2"), yrEnd, false, CONTINUE_ON_FAILURE)
+
+49
+00:00:18,046 --> 00:00:18,046
+5. delay(1)
+
+50
+00:00:19,051 --> 00:00:19,052
+117. dynxpath2 = "//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '" + dEnd + "']) = count(//*[@type = 'button' and @data-pika-day = '" + dEnd + "'])]"
+
+51
+00:00:19,067 --> 00:00:19,083
+121. to2 = new com.kms.katalon.core.testobject.TestObject(eldia2)
+
+52
+00:00:19,083 --> 00:00:19,083
+125. to2.addProperty("xpath", EQUALS, dynxpath2)
+
+53
+00:00:19,083 --> 00:00:19,083
+129. click(to2)
+
+54
+00:00:19,350 --> 00:00:19,351
+133. selectOptionByValue(findTestObject("homepage/select_rooms"), numRooms, false, CONTINUE_ON_FAILURE)
+
+55
+00:00:19,487 --> 00:00:19,488
+137. delay(1)
+
+56
+00:00:20,496 --> 00:00:20,497
+141. tadults = adults.split(",")
+
+57
+00:00:20,498 --> 00:00:20,514
+145. tnumrooms = Integer.parseInt(numRooms)
+
+58
+00:00:20,529 --> 00:00:20,529
+149. for ([i = 1, i <= tnumrooms, (i++)])
+
+59
+00:00:20,529 --> 00:00:20,529
+1. na = new com.kms.katalon.core.testobject.TestObject(seladults)
+
+60
+00:00:20,529 --> 00:00:20,529
+5. nadynxpath = "//div[not(contains(@class, 'hidden-multi-room'))]/div/select[@name='ap" + i + "']"
+
+61
+00:00:20,529 --> 00:00:20,529
+9. na.addProperty("xpath", EQUALS, nadynxpath)
+
+62
+00:00:20,529 --> 00:00:20,529
+13. if (verifyElementPresent(na, 1, CONTINUE_ON_FAILURE))
+
+63
+00:00:20,562 --> 00:00:20,562
+1. println("
+I'm here
+")
+
+64
+00:00:20,562 --> 00:00:20,562
+5. click(na)
+

@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TestSuiteForBookit" time="114" tests="4" failures="0" errors="0">
+   <testsuite name="TestSuiteForBookit" tests="4" failures="0" errors="0" time="114" timestamp="2019-05-03 11:05:32" hostname="andres.jaramillo - allisoncotignol.bookit.local" id="Test Suites/TestSuiteForBookit">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Andres.Jaramillo\\git\\bookit-bookingtests-katalon\\Reports\\TestSuiteForBookit\\20190503_110529"/>
+         <property name="logFiles" value="C:\\Users\\Andres.Jaramillo\\git\\bookit-bookingtests-katalon\\Reports\\TestSuiteForBookit\\20190503_110529\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="andres.jaramillo - allisoncotignol.bookit.local"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="6.1.0.1"/>
+         <property name="browser" value="Chrome 74.0.3729.131"/>
+         <property name="hostAddress" value="172.19.15.34"/>
+         <property name="sessionId" value="0c69292ac6882b3af0f0297e9dabfb62"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/Booking02" classname="Test Cases/Booking02" status="PASSED">
+         <system-out><![CDATA[2019-05-03 11:05:33 - [TEST_CASE][PASSED] - Test Cases/Booking02: Test Cases/Booking02
+
+2019-05-03 11:05:34 - [TEST_STEP][PASSED] - openBrowser("https://bookit-qa6.com"): Browser is opened with url: 'https://bookit-qa6.com'
+
+2019-05-03 11:05:34 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-05-03 11:05:34 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-05-03 11:05:40 - [MESSAGE][PASSED] - Browser is opened with url: 'https://bookit-qa6.com'
+
+2019-05-03 11:05:40 - [TEST_STEP][PASSED] - click(findTestObject("homepage/flight_checkbox")): Object: 'Object Repository/homepage/flight_checkbox' is clicked on
+
+2019-05-03 11:05:43 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/flight_checkbox' is clicked on
+
+2019-05-03 11:05:43 - [TEST_STEP][PASSED] - setText(findTestObject("homepage/city_or_airport"), "cheese"): Text 'cheese' is set on object 'Object Repository/homepage/city_or_airport'
+
+2019-05-03 11:05:43 - [MESSAGE][PASSED] - Text 'cheese' is set on object 'Object Repository/homepage/city_or_airport'
+
+2019-05-03 11:05:43 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:05:44 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:05:44 - [TEST_STEP][PASSED] - click(findTestObject("homepage/div_Cheese City IL US")): Object: 'Object Repository/homepage/div_Cheese City IL US' is clicked on
+
+2019-05-03 11:05:44 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/div_Cheese City IL US' is clicked on
+
+2019-05-03 11:05:44 - [TEST_STEP][PASSED] - checkinId = getAttribute(findTestObject("homepage/checkin_date"), "id"): Attribute 'id' of object 'Object Repository/homepage/checkin_date' is: 'ember532-fd'
+
+2019-05-03 11:05:45 - [MESSAGE][PASSED] - Attribute 'id' of object 'Object Repository/homepage/checkin_date' is: 'ember532-fd'
+
+2019-05-03 11:05:45 - [TEST_STEP][PASSED] - checkoutId = getAttribute(findTestObject("homepage/checkout_date"), "id"): Attribute 'id' of object 'Object Repository/homepage/checkout_date' is: 'ember532-td'
+
+2019-05-03 11:05:45 - [MESSAGE][PASSED] - Attribute 'id' of object 'Object Repository/homepage/checkout_date' is: 'ember532-td'
+
+2019-05-03 11:05:45 - [TEST_STEP][PASSED] - iniDate = moIni + "/" + dayIni + "/" + yrIni: null
+
+2019-05-03 11:05:45 - [TEST_STEP][PASSED] - myIniDate = "$('#" + checkinId + "').val('" + iniDate + "')": null
+
+2019-05-03 11:05:45 - [TEST_STEP][PASSED] - endDate = moEnd + "/" + dayEnd + "/" + yrEnd: null
+
+2019-05-03 11:05:45 - [TEST_STEP][PASSED] - myEndDate = "$('#" + checkoutId + "').val('" + endDate + "')": null
+
+2019-05-03 11:05:45 - [TEST_STEP][PASSED] - strMoIni = bookitKeywords.commonFunctions.getMonthName(moIni): bookitKeywords.commonFunctions.getMonthName is PASSED
+
+2019-05-03 11:05:45 - [MESSAGE][PASSED] - bookitKeywords.commonFunctions.getMonthName is PASSED
+
+2019-05-03 11:05:45 - [TEST_STEP][PASSED] - strMoEnd = bookitKeywords.commonFunctions.getMonthName(moEnd): bookitKeywords.commonFunctions.getMonthName is PASSED
+
+2019-05-03 11:05:45 - [MESSAGE][PASSED] - bookitKeywords.commonFunctions.getMonthName is PASSED
+
+2019-05-03 11:05:45 - [TEST_STEP][PASSED] - dIni = Integer.parseInt(dayIni): null
+
+2019-05-03 11:05:45 - [TEST_STEP][PASSED] - dEnd = Integer.parseInt(dayEnd): null
+
+2019-05-03 11:05:45 - [TEST_STEP][PASSED] - println(dIni): null
+
+2019-05-03 11:05:45 - [TEST_STEP][PASSED] - println(dEnd): null
+
+2019-05-03 11:05:45 - [TEST_STEP][PASSED] - click(findTestObject("homepage/checkin_date")): Object: 'Object Repository/homepage/checkin_date' is clicked on
+
+2019-05-03 11:05:45 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/checkin_date' is clicked on
+
+2019-05-03 11:05:45 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:05:46 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:05:46 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("homepage/sel_date_month1"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:05:46 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_month1' is present
+
+2019-05-03 11:05:46 - [TEST_STEP][PASSED] - if (waitForElementClickable(findTestObject("homepage/sel_date_month1"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:05:46 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_month1' is clickable
+
+2019-05-03 11:05:46 - [TEST_STEP][PASSED] - click(findTestObject("homepage/sel_date_month1"), CONTINUE_ON_FAILURE): Object: 'Object Repository/homepage/sel_date_month1' is clicked on
+
+2019-05-03 11:05:46 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/sel_date_month1' is clicked on
+
+2019-05-03 11:05:46 - [TEST_STEP][PASSED] - if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_month1"), strMoIni, false, 1, CONTINUE_ON_FAILURE)): Delayed 1 second(s)
+
+2019-05-03 11:05:46 - [MESSAGE][PASSED] - 1 option(s) with label 'May' is/are present in object 'Object Repository/homepage/sel_date_month1' 
+
+2019-05-03 11:05:46 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("homepage/sel_date_month1"), strMoIni, false, CONTINUE_ON_FAILURE): All options with label 'May' are selected in object 'Object Repository/homepage/sel_date_month1' 
+
+2019-05-03 11:05:46 - [MESSAGE][PASSED] - All options with label 'May' are selected in object 'Object Repository/homepage/sel_date_month1' 
+
+2019-05-03 11:05:46 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:05:47 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:05:47 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("homepage/sel_date_year1"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:05:48 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_year1' is present
+
+2019-05-03 11:05:48 - [TEST_STEP][PASSED] - if (waitForElementClickable(findTestObject("homepage/sel_date_year1"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:05:48 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_year1' is clickable
+
+2019-05-03 11:05:48 - [TEST_STEP][PASSED] - click(findTestObject("homepage/sel_date_year1"), CONTINUE_ON_FAILURE): Object: 'Object Repository/homepage/sel_date_year1' is clicked on
+
+2019-05-03 11:05:48 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/sel_date_year1' is clicked on
+
+2019-05-03 11:05:48 - [TEST_STEP][PASSED] - if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_year1"), yrIni, false, 1, CONTINUE_ON_FAILURE)): Delayed 2 second(s)
+
+2019-05-03 11:05:48 - [MESSAGE][PASSED] - 1 option(s) with label '2019' is/are present in object 'Object Repository/homepage/sel_date_year1' 
+
+2019-05-03 11:05:48 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("homepage/sel_date_year1"), yrIni, false, CONTINUE_ON_FAILURE): All options with label '2019' are selected in object 'Object Repository/homepage/sel_date_year1' 
+
+2019-05-03 11:05:48 - [MESSAGE][PASSED] - All options with label '2019' are selected in object 'Object Repository/homepage/sel_date_year1' 
+
+2019-05-03 11:05:48 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-03 11:05:50 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-03 11:05:50 - [TEST_STEP][PASSED] - dynxpath = "//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '" + dIni + "']) = count(//*[@type = 'button' and @data-pika-day = '" + dIni + "'])]": null
+
+2019-05-03 11:05:50 - [TEST_STEP][PASSED] - to = new com.kms.katalon.core.testobject.TestObject(eldia): null
+
+2019-05-03 11:05:50 - [TEST_STEP][PASSED] - to.addProperty("xpath", EQUALS, dynxpath): null
+
+2019-05-03 11:05:50 - [TEST_STEP][PASSED] - click(to): Object: 'eldia' is clicked on
+
+2019-05-03 11:05:50 - [MESSAGE][PASSED] - Object: 'eldia' is clicked on
+
+2019-05-03 11:05:50 - [TEST_STEP][PASSED] - click(findTestObject("homepage/checkout_date")): Object: 'Object Repository/homepage/checkout_date' is clicked on
+
+2019-05-03 11:05:50 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/checkout_date' is clicked on
+
+2019-05-03 11:05:50 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:05:51 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:05:51 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("homepage/sel_date_month2"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:05:51 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_month2' is present
+
+2019-05-03 11:05:51 - [TEST_STEP][PASSED] - if (waitForElementClickable(findTestObject("homepage/sel_date_month2"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:05:51 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_month2' is clickable
+
+2019-05-03 11:05:51 - [TEST_STEP][PASSED] - click(findTestObject("homepage/sel_date_month2"), CONTINUE_ON_FAILURE): Object: 'Object Repository/homepage/sel_date_month2' is clicked on
+
+2019-05-03 11:05:52 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/sel_date_month2' is clicked on
+
+2019-05-03 11:05:52 - [TEST_STEP][PASSED] - if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_month2"), strMoEnd, false, 1, CONTINUE_ON_FAILURE)): Delayed 2 second(s)
+
+2019-05-03 11:05:52 - [MESSAGE][PASSED] - 1 option(s) with label 'May' is/are present in object 'Object Repository/homepage/sel_date_month2' 
+
+2019-05-03 11:05:52 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("homepage/sel_date_month2"), strMoEnd, false, CONTINUE_ON_FAILURE): All options with label 'May' are selected in object 'Object Repository/homepage/sel_date_month2' 
+
+2019-05-03 11:05:52 - [MESSAGE][PASSED] - All options with label 'May' are selected in object 'Object Repository/homepage/sel_date_month2' 
+
+2019-05-03 11:05:52 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-03 11:05:54 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-03 11:05:54 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("homepage/sel_date_year2"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:05:54 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_year2' is present
+
+2019-05-03 11:05:54 - [TEST_STEP][PASSED] - if (waitForElementClickable(findTestObject("homepage/sel_date_year2"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:05:54 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_year2' is clickable
+
+2019-05-03 11:05:54 - [TEST_STEP][PASSED] - click(findTestObject("homepage/sel_date_year2"), CONTINUE_ON_FAILURE): Object: 'Object Repository/homepage/sel_date_year2' is clicked on
+
+2019-05-03 11:05:54 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/sel_date_year2' is clicked on
+
+2019-05-03 11:05:54 - [TEST_STEP][PASSED] - if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_year2"), yrEnd, false, 1, CONTINUE_ON_FAILURE)): Delayed 1 second(s)
+
+2019-05-03 11:05:54 - [MESSAGE][PASSED] - 1 option(s) with label '2019' is/are present in object 'Object Repository/homepage/sel_date_year2' 
+
+2019-05-03 11:05:54 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("homepage/sel_date_year2"), yrEnd, false, CONTINUE_ON_FAILURE): All options with label '2019' are selected in object 'Object Repository/homepage/sel_date_year2' 
+
+2019-05-03 11:05:54 - [MESSAGE][PASSED] - All options with label '2019' are selected in object 'Object Repository/homepage/sel_date_year2' 
+
+2019-05-03 11:05:54 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:05:55 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:05:55 - [TEST_STEP][PASSED] - dynxpath2 = "//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '" + dEnd + "']) = count(//*[@type = 'button' and @data-pika-day = '" + dEnd + "'])]": null
+
+2019-05-03 11:05:55 - [TEST_STEP][PASSED] - to2 = new com.kms.katalon.core.testobject.TestObject(eldia2): null
+
+2019-05-03 11:05:55 - [TEST_STEP][PASSED] - to2.addProperty("xpath", EQUALS, dynxpath2): null
+
+2019-05-03 11:05:55 - [TEST_STEP][PASSED] - click(to2): Object: 'eldia2' is clicked on
+
+2019-05-03 11:05:56 - [MESSAGE][PASSED] - Object: 'eldia2' is clicked on
+
+2019-05-03 11:05:56 - [TEST_STEP][PASSED] - click(findTestObject("homepage/button_Search")): Object: 'Object Repository/homepage/button_Search' is clicked on
+
+2019-05-03 11:05:56 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/button_Search' is clicked on
+
+2019-05-03 11:05:56 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+2019-05-03 11:06:00 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-05-03 11:06:00 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-05-03 11:06:01 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Booking02" classname="Test Cases/Booking02" status="PASSED">
+         <system-out><![CDATA[2019-05-03 11:06:03 - [TEST_CASE][PASSED] - Test Cases/Booking02: Test Cases/Booking02
+
+2019-05-03 11:06:03 - [TEST_STEP][PASSED] - openBrowser("https://bookit-qa6.com"): Browser is opened with url: 'https://bookit-qa6.com'
+
+2019-05-03 11:06:03 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-05-03 11:06:09 - [MESSAGE][PASSED] - Browser is opened with url: 'https://bookit-qa6.com'
+
+2019-05-03 11:06:09 - [TEST_STEP][PASSED] - click(findTestObject("homepage/flight_checkbox")): Object: 'Object Repository/homepage/flight_checkbox' is clicked on
+
+2019-05-03 11:06:12 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/flight_checkbox' is clicked on
+
+2019-05-03 11:06:12 - [TEST_STEP][PASSED] - setText(findTestObject("homepage/city_or_airport"), "cheese"): Text 'cheese' is set on object 'Object Repository/homepage/city_or_airport'
+
+2019-05-03 11:06:13 - [MESSAGE][PASSED] - Text 'cheese' is set on object 'Object Repository/homepage/city_or_airport'
+
+2019-05-03 11:06:13 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:06:14 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:06:14 - [TEST_STEP][PASSED] - click(findTestObject("homepage/div_Cheese City IL US")): Object: 'Object Repository/homepage/div_Cheese City IL US' is clicked on
+
+2019-05-03 11:06:14 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/div_Cheese City IL US' is clicked on
+
+2019-05-03 11:06:14 - [TEST_STEP][PASSED] - checkinId = getAttribute(findTestObject("homepage/checkin_date"), "id"): Attribute 'id' of object 'Object Repository/homepage/checkin_date' is: 'ember532-fd'
+
+2019-05-03 11:06:14 - [MESSAGE][PASSED] - Attribute 'id' of object 'Object Repository/homepage/checkin_date' is: 'ember532-fd'
+
+2019-05-03 11:06:14 - [TEST_STEP][PASSED] - checkoutId = getAttribute(findTestObject("homepage/checkout_date"), "id"): Attribute 'id' of object 'Object Repository/homepage/checkout_date' is: 'ember532-td'
+
+2019-05-03 11:06:14 - [MESSAGE][PASSED] - Attribute 'id' of object 'Object Repository/homepage/checkout_date' is: 'ember532-td'
+
+2019-05-03 11:06:14 - [TEST_STEP][PASSED] - iniDate = moIni + "/" + dayIni + "/" + yrIni: null
+
+2019-05-03 11:06:14 - [TEST_STEP][PASSED] - myIniDate = "$('#" + checkinId + "').val('" + iniDate + "')": null
+
+2019-05-03 11:06:14 - [TEST_STEP][PASSED] - endDate = moEnd + "/" + dayEnd + "/" + yrEnd: null
+
+2019-05-03 11:06:14 - [TEST_STEP][PASSED] - myEndDate = "$('#" + checkoutId + "').val('" + endDate + "')": null
+
+2019-05-03 11:06:14 - [TEST_STEP][PASSED] - strMoIni = bookitKeywords.commonFunctions.getMonthName(moIni): bookitKeywords.commonFunctions.getMonthName is PASSED
+
+2019-05-03 11:06:14 - [MESSAGE][PASSED] - bookitKeywords.commonFunctions.getMonthName is PASSED
+
+2019-05-03 11:06:14 - [TEST_STEP][PASSED] - strMoEnd = bookitKeywords.commonFunctions.getMonthName(moEnd): bookitKeywords.commonFunctions.getMonthName is PASSED
+
+2019-05-03 11:06:14 - [MESSAGE][PASSED] - bookitKeywords.commonFunctions.getMonthName is PASSED
+
+2019-05-03 11:06:14 - [TEST_STEP][PASSED] - dIni = Integer.parseInt(dayIni): null
+
+2019-05-03 11:06:14 - [TEST_STEP][PASSED] - dEnd = Integer.parseInt(dayEnd): null
+
+2019-05-03 11:06:14 - [TEST_STEP][PASSED] - println(dIni): null
+
+2019-05-03 11:06:14 - [TEST_STEP][PASSED] - println(dEnd): null
+
+2019-05-03 11:06:14 - [TEST_STEP][PASSED] - click(findTestObject("homepage/checkin_date")): Object: 'Object Repository/homepage/checkin_date' is clicked on
+
+2019-05-03 11:06:14 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/checkin_date' is clicked on
+
+2019-05-03 11:06:14 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:06:15 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:06:15 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("homepage/sel_date_month1"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:06:15 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_month1' is present
+
+2019-05-03 11:06:15 - [TEST_STEP][PASSED] - if (waitForElementClickable(findTestObject("homepage/sel_date_month1"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:06:15 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_month1' is clickable
+
+2019-05-03 11:06:15 - [TEST_STEP][PASSED] - click(findTestObject("homepage/sel_date_month1"), CONTINUE_ON_FAILURE): Object: 'Object Repository/homepage/sel_date_month1' is clicked on
+
+2019-05-03 11:06:15 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/sel_date_month1' is clicked on
+
+2019-05-03 11:06:15 - [TEST_STEP][PASSED] - if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_month1"), strMoIni, false, 1, CONTINUE_ON_FAILURE)): Delayed 1 second(s)
+
+2019-05-03 11:06:16 - [MESSAGE][PASSED] - 1 option(s) with label 'June' is/are present in object 'Object Repository/homepage/sel_date_month1' 
+
+2019-05-03 11:06:16 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("homepage/sel_date_month1"), strMoIni, false, CONTINUE_ON_FAILURE): All options with label 'June' are selected in object 'Object Repository/homepage/sel_date_month1' 
+
+2019-05-03 11:06:16 - [MESSAGE][PASSED] - All options with label 'June' are selected in object 'Object Repository/homepage/sel_date_month1' 
+
+2019-05-03 11:06:16 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:06:17 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:06:17 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("homepage/sel_date_year1"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:06:17 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_year1' is present
+
+2019-05-03 11:06:17 - [TEST_STEP][PASSED] - if (waitForElementClickable(findTestObject("homepage/sel_date_year1"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:06:17 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_year1' is clickable
+
+2019-05-03 11:06:17 - [TEST_STEP][PASSED] - click(findTestObject("homepage/sel_date_year1"), CONTINUE_ON_FAILURE): Object: 'Object Repository/homepage/sel_date_year1' is clicked on
+
+2019-05-03 11:06:17 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/sel_date_year1' is clicked on
+
+2019-05-03 11:06:17 - [TEST_STEP][PASSED] - if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_year1"), yrIni, false, 1, CONTINUE_ON_FAILURE)): Delayed 2 second(s)
+
+2019-05-03 11:06:17 - [MESSAGE][PASSED] - 1 option(s) with label '2019' is/are present in object 'Object Repository/homepage/sel_date_year1' 
+
+2019-05-03 11:06:17 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("homepage/sel_date_year1"), yrIni, false, CONTINUE_ON_FAILURE): All options with label '2019' are selected in object 'Object Repository/homepage/sel_date_year1' 
+
+2019-05-03 11:06:17 - [MESSAGE][PASSED] - All options with label '2019' are selected in object 'Object Repository/homepage/sel_date_year1' 
+
+2019-05-03 11:06:17 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-03 11:06:19 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-03 11:06:19 - [TEST_STEP][PASSED] - dynxpath = "//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '" + dIni + "']) = count(//*[@type = 'button' and @data-pika-day = '" + dIni + "'])]": null
+
+2019-05-03 11:06:19 - [TEST_STEP][PASSED] - to = new com.kms.katalon.core.testobject.TestObject(eldia): null
+
+2019-05-03 11:06:19 - [TEST_STEP][PASSED] - to.addProperty("xpath", EQUALS, dynxpath): null
+
+2019-05-03 11:06:19 - [TEST_STEP][PASSED] - click(to): Object: 'eldia' is clicked on
+
+2019-05-03 11:06:19 - [MESSAGE][PASSED] - Object: 'eldia' is clicked on
+
+2019-05-03 11:06:19 - [TEST_STEP][PASSED] - click(findTestObject("homepage/checkout_date")): Object: 'Object Repository/homepage/checkout_date' is clicked on
+
+2019-05-03 11:06:20 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/checkout_date' is clicked on
+
+2019-05-03 11:06:20 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:06:21 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:06:21 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("homepage/sel_date_month2"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:06:21 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_month2' is present
+
+2019-05-03 11:06:21 - [TEST_STEP][PASSED] - if (waitForElementClickable(findTestObject("homepage/sel_date_month2"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:06:21 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_month2' is clickable
+
+2019-05-03 11:06:21 - [TEST_STEP][PASSED] - click(findTestObject("homepage/sel_date_month2"), CONTINUE_ON_FAILURE): Object: 'Object Repository/homepage/sel_date_month2' is clicked on
+
+2019-05-03 11:06:21 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/sel_date_month2' is clicked on
+
+2019-05-03 11:06:21 - [TEST_STEP][PASSED] - if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_month2"), strMoEnd, false, 1, CONTINUE_ON_FAILURE)): Delayed 2 second(s)
+
+2019-05-03 11:06:21 - [MESSAGE][PASSED] - 1 option(s) with label 'June' is/are present in object 'Object Repository/homepage/sel_date_month2' 
+
+2019-05-03 11:06:21 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("homepage/sel_date_month2"), strMoEnd, false, CONTINUE_ON_FAILURE): All options with label 'June' are selected in object 'Object Repository/homepage/sel_date_month2' 
+
+2019-05-03 11:06:21 - [MESSAGE][PASSED] - All options with label 'June' are selected in object 'Object Repository/homepage/sel_date_month2' 
+
+2019-05-03 11:06:21 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-03 11:06:23 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-03 11:06:23 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("homepage/sel_date_year2"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:06:23 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_year2' is present
+
+2019-05-03 11:06:23 - [TEST_STEP][PASSED] - if (waitForElementClickable(findTestObject("homepage/sel_date_year2"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:06:23 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_year2' is clickable
+
+2019-05-03 11:06:23 - [TEST_STEP][PASSED] - click(findTestObject("homepage/sel_date_year2"), CONTINUE_ON_FAILURE): Object: 'Object Repository/homepage/sel_date_year2' is clicked on
+
+2019-05-03 11:06:23 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/sel_date_year2' is clicked on
+
+2019-05-03 11:06:23 - [TEST_STEP][PASSED] - if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_year2"), yrEnd, false, 1, CONTINUE_ON_FAILURE)): Delayed 1 second(s)
+
+2019-05-03 11:06:24 - [MESSAGE][PASSED] - 1 option(s) with label '2019' is/are present in object 'Object Repository/homepage/sel_date_year2' 
+
+2019-05-03 11:06:24 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("homepage/sel_date_year2"), yrEnd, false, CONTINUE_ON_FAILURE): All options with label '2019' are selected in object 'Object Repository/homepage/sel_date_year2' 
+
+2019-05-03 11:06:24 - [MESSAGE][PASSED] - All options with label '2019' are selected in object 'Object Repository/homepage/sel_date_year2' 
+
+2019-05-03 11:06:24 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:06:25 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:06:25 - [TEST_STEP][PASSED] - dynxpath2 = "//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '" + dEnd + "']) = count(//*[@type = 'button' and @data-pika-day = '" + dEnd + "'])]": null
+
+2019-05-03 11:06:25 - [TEST_STEP][PASSED] - to2 = new com.kms.katalon.core.testobject.TestObject(eldia2): null
+
+2019-05-03 11:06:25 - [TEST_STEP][PASSED] - to2.addProperty("xpath", EQUALS, dynxpath2): null
+
+2019-05-03 11:06:25 - [TEST_STEP][PASSED] - click(to2): Object: 'eldia2' is clicked on
+
+2019-05-03 11:06:25 - [MESSAGE][PASSED] - Object: 'eldia2' is clicked on
+
+2019-05-03 11:06:25 - [TEST_STEP][PASSED] - click(findTestObject("homepage/button_Search")): Object: 'Object Repository/homepage/button_Search' is clicked on
+
+2019-05-03 11:06:25 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/button_Search' is clicked on
+
+2019-05-03 11:06:25 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+2019-05-03 11:06:30 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-05-03 11:06:30 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-05-03 11:06:31 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Booking02" classname="Test Cases/Booking02" status="PASSED">
+         <system-out><![CDATA[2019-05-03 11:06:33 - [TEST_CASE][PASSED] - Test Cases/Booking02: Test Cases/Booking02
+
+2019-05-03 11:06:33 - [TEST_STEP][PASSED] - openBrowser("https://bookit-qa6.com"): Browser is opened with url: 'https://bookit-qa6.com'
+
+2019-05-03 11:06:33 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-05-03 11:06:39 - [MESSAGE][PASSED] - Browser is opened with url: 'https://bookit-qa6.com'
+
+2019-05-03 11:06:39 - [TEST_STEP][PASSED] - click(findTestObject("homepage/flight_checkbox")): Object: 'Object Repository/homepage/flight_checkbox' is clicked on
+
+2019-05-03 11:06:42 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/flight_checkbox' is clicked on
+
+2019-05-03 11:06:42 - [TEST_STEP][PASSED] - setText(findTestObject("homepage/city_or_airport"), "cheese"): Text 'cheese' is set on object 'Object Repository/homepage/city_or_airport'
+
+2019-05-03 11:06:42 - [MESSAGE][PASSED] - Text 'cheese' is set on object 'Object Repository/homepage/city_or_airport'
+
+2019-05-03 11:06:42 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:06:43 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:06:43 - [TEST_STEP][PASSED] - click(findTestObject("homepage/div_Cheese City IL US")): Object: 'Object Repository/homepage/div_Cheese City IL US' is clicked on
+
+2019-05-03 11:06:43 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/div_Cheese City IL US' is clicked on
+
+2019-05-03 11:06:43 - [TEST_STEP][PASSED] - checkinId = getAttribute(findTestObject("homepage/checkin_date"), "id"): Attribute 'id' of object 'Object Repository/homepage/checkin_date' is: 'ember532-fd'
+
+2019-05-03 11:06:43 - [MESSAGE][PASSED] - Attribute 'id' of object 'Object Repository/homepage/checkin_date' is: 'ember532-fd'
+
+2019-05-03 11:06:43 - [TEST_STEP][PASSED] - checkoutId = getAttribute(findTestObject("homepage/checkout_date"), "id"): Attribute 'id' of object 'Object Repository/homepage/checkout_date' is: 'ember532-td'
+
+2019-05-03 11:06:43 - [MESSAGE][PASSED] - Attribute 'id' of object 'Object Repository/homepage/checkout_date' is: 'ember532-td'
+
+2019-05-03 11:06:43 - [TEST_STEP][PASSED] - iniDate = moIni + "/" + dayIni + "/" + yrIni: null
+
+2019-05-03 11:06:43 - [TEST_STEP][PASSED] - myIniDate = "$('#" + checkinId + "').val('" + iniDate + "')": null
+
+2019-05-03 11:06:43 - [TEST_STEP][PASSED] - endDate = moEnd + "/" + dayEnd + "/" + yrEnd: null
+
+2019-05-03 11:06:43 - [TEST_STEP][PASSED] - myEndDate = "$('#" + checkoutId + "').val('" + endDate + "')": null
+
+2019-05-03 11:06:43 - [TEST_STEP][PASSED] - strMoIni = bookitKeywords.commonFunctions.getMonthName(moIni): bookitKeywords.commonFunctions.getMonthName is PASSED
+
+2019-05-03 11:06:43 - [MESSAGE][PASSED] - bookitKeywords.commonFunctions.getMonthName is PASSED
+
+2019-05-03 11:06:43 - [TEST_STEP][PASSED] - strMoEnd = bookitKeywords.commonFunctions.getMonthName(moEnd): bookitKeywords.commonFunctions.getMonthName is PASSED
+
+2019-05-03 11:06:43 - [MESSAGE][PASSED] - bookitKeywords.commonFunctions.getMonthName is PASSED
+
+2019-05-03 11:06:43 - [TEST_STEP][PASSED] - dIni = Integer.parseInt(dayIni): null
+
+2019-05-03 11:06:43 - [TEST_STEP][PASSED] - dEnd = Integer.parseInt(dayEnd): null
+
+2019-05-03 11:06:43 - [TEST_STEP][PASSED] - println(dIni): null
+
+2019-05-03 11:06:43 - [TEST_STEP][PASSED] - println(dEnd): null
+
+2019-05-03 11:06:43 - [TEST_STEP][PASSED] - click(findTestObject("homepage/checkin_date")): Object: 'Object Repository/homepage/checkin_date' is clicked on
+
+2019-05-03 11:06:44 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/checkin_date' is clicked on
+
+2019-05-03 11:06:44 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:06:45 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:06:45 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("homepage/sel_date_month1"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:06:45 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_month1' is present
+
+2019-05-03 11:06:45 - [TEST_STEP][PASSED] - if (waitForElementClickable(findTestObject("homepage/sel_date_month1"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:06:45 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_month1' is clickable
+
+2019-05-03 11:06:45 - [TEST_STEP][PASSED] - click(findTestObject("homepage/sel_date_month1"), CONTINUE_ON_FAILURE): Object: 'Object Repository/homepage/sel_date_month1' is clicked on
+
+2019-05-03 11:06:45 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/sel_date_month1' is clicked on
+
+2019-05-03 11:06:45 - [TEST_STEP][PASSED] - if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_month1"), strMoIni, false, 1, CONTINUE_ON_FAILURE)): Delayed 1 second(s)
+
+2019-05-03 11:06:45 - [MESSAGE][PASSED] - 1 option(s) with label 'May' is/are present in object 'Object Repository/homepage/sel_date_month1' 
+
+2019-05-03 11:06:45 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("homepage/sel_date_month1"), strMoIni, false, CONTINUE_ON_FAILURE): All options with label 'May' are selected in object 'Object Repository/homepage/sel_date_month1' 
+
+2019-05-03 11:06:45 - [MESSAGE][PASSED] - All options with label 'May' are selected in object 'Object Repository/homepage/sel_date_month1' 
+
+2019-05-03 11:06:45 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:06:46 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:06:46 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("homepage/sel_date_year1"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:06:46 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_year1' is present
+
+2019-05-03 11:06:46 - [TEST_STEP][PASSED] - if (waitForElementClickable(findTestObject("homepage/sel_date_year1"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:06:46 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_year1' is clickable
+
+2019-05-03 11:06:46 - [TEST_STEP][PASSED] - click(findTestObject("homepage/sel_date_year1"), CONTINUE_ON_FAILURE): Object: 'Object Repository/homepage/sel_date_year1' is clicked on
+
+2019-05-03 11:06:46 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/sel_date_year1' is clicked on
+
+2019-05-03 11:06:46 - [TEST_STEP][PASSED] - if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_year1"), yrIni, false, 1, CONTINUE_ON_FAILURE)): Delayed 2 second(s)
+
+2019-05-03 11:06:47 - [MESSAGE][PASSED] - 1 option(s) with label '2019' is/are present in object 'Object Repository/homepage/sel_date_year1' 
+
+2019-05-03 11:06:47 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("homepage/sel_date_year1"), yrIni, false, CONTINUE_ON_FAILURE): All options with label '2019' are selected in object 'Object Repository/homepage/sel_date_year1' 
+
+2019-05-03 11:06:47 - [MESSAGE][PASSED] - All options with label '2019' are selected in object 'Object Repository/homepage/sel_date_year1' 
+
+2019-05-03 11:06:47 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-03 11:06:49 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-03 11:06:49 - [TEST_STEP][PASSED] - dynxpath = "//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '" + dIni + "']) = count(//*[@type = 'button' and @data-pika-day = '" + dIni + "'])]": null
+
+2019-05-03 11:06:49 - [TEST_STEP][PASSED] - to = new com.kms.katalon.core.testobject.TestObject(eldia): null
+
+2019-05-03 11:06:49 - [TEST_STEP][PASSED] - to.addProperty("xpath", EQUALS, dynxpath): null
+
+2019-05-03 11:06:49 - [TEST_STEP][PASSED] - click(to): Object: 'eldia' is clicked on
+
+2019-05-03 11:06:49 - [MESSAGE][PASSED] - Object: 'eldia' is clicked on
+
+2019-05-03 11:06:49 - [TEST_STEP][PASSED] - click(findTestObject("homepage/checkout_date")): Object: 'Object Repository/homepage/checkout_date' is clicked on
+
+2019-05-03 11:06:49 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/checkout_date' is clicked on
+
+2019-05-03 11:06:49 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:06:50 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:06:50 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("homepage/sel_date_month2"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:06:50 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_month2' is present
+
+2019-05-03 11:06:50 - [TEST_STEP][PASSED] - if (waitForElementClickable(findTestObject("homepage/sel_date_month2"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:06:50 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_month2' is clickable
+
+2019-05-03 11:06:50 - [TEST_STEP][PASSED] - click(findTestObject("homepage/sel_date_month2"), CONTINUE_ON_FAILURE): Object: 'Object Repository/homepage/sel_date_month2' is clicked on
+
+2019-05-03 11:06:50 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/sel_date_month2' is clicked on
+
+2019-05-03 11:06:50 - [TEST_STEP][PASSED] - if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_month2"), strMoEnd, false, 1, CONTINUE_ON_FAILURE)): Delayed 2 second(s)
+
+2019-05-03 11:06:51 - [MESSAGE][PASSED] - 1 option(s) with label 'June' is/are present in object 'Object Repository/homepage/sel_date_month2' 
+
+2019-05-03 11:06:51 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("homepage/sel_date_month2"), strMoEnd, false, CONTINUE_ON_FAILURE): All options with label 'June' are selected in object 'Object Repository/homepage/sel_date_month2' 
+
+2019-05-03 11:06:51 - [MESSAGE][PASSED] - All options with label 'June' are selected in object 'Object Repository/homepage/sel_date_month2' 
+
+2019-05-03 11:06:51 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-03 11:06:53 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-03 11:06:53 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("homepage/sel_date_year2"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:06:53 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_year2' is present
+
+2019-05-03 11:06:53 - [TEST_STEP][PASSED] - if (waitForElementClickable(findTestObject("homepage/sel_date_year2"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:06:53 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_year2' is clickable
+
+2019-05-03 11:06:53 - [TEST_STEP][PASSED] - click(findTestObject("homepage/sel_date_year2"), CONTINUE_ON_FAILURE): Object: 'Object Repository/homepage/sel_date_year2' is clicked on
+
+2019-05-03 11:06:53 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/sel_date_year2' is clicked on
+
+2019-05-03 11:06:53 - [TEST_STEP][PASSED] - if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_year2"), yrEnd, false, 1, CONTINUE_ON_FAILURE)): Delayed 1 second(s)
+
+2019-05-03 11:06:53 - [MESSAGE][PASSED] - 1 option(s) with label '2019' is/are present in object 'Object Repository/homepage/sel_date_year2' 
+
+2019-05-03 11:06:53 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("homepage/sel_date_year2"), yrEnd, false, CONTINUE_ON_FAILURE): All options with label '2019' are selected in object 'Object Repository/homepage/sel_date_year2' 
+
+2019-05-03 11:06:53 - [MESSAGE][PASSED] - All options with label '2019' are selected in object 'Object Repository/homepage/sel_date_year2' 
+
+2019-05-03 11:06:53 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:06:54 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:06:54 - [TEST_STEP][PASSED] - dynxpath2 = "//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '" + dEnd + "']) = count(//*[@type = 'button' and @data-pika-day = '" + dEnd + "'])]": null
+
+2019-05-03 11:06:54 - [TEST_STEP][PASSED] - to2 = new com.kms.katalon.core.testobject.TestObject(eldia2): null
+
+2019-05-03 11:06:54 - [TEST_STEP][PASSED] - to2.addProperty("xpath", EQUALS, dynxpath2): null
+
+2019-05-03 11:06:54 - [TEST_STEP][PASSED] - click(to2): Object: 'eldia2' is clicked on
+
+2019-05-03 11:06:54 - [MESSAGE][PASSED] - Object: 'eldia2' is clicked on
+
+2019-05-03 11:06:54 - [TEST_STEP][PASSED] - click(findTestObject("homepage/button_Search")): Object: 'Object Repository/homepage/button_Search' is clicked on
+
+2019-05-03 11:06:55 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/button_Search' is clicked on
+
+2019-05-03 11:06:55 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+2019-05-03 11:06:58 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-05-03 11:06:58 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-05-03 11:06:59 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Booking02" classname="Test Cases/Booking02" status="PASSED">
+         <system-out><![CDATA[2019-05-03 11:07:01 - [TEST_CASE][PASSED] - Test Cases/Booking02: Test Cases/Booking02
+
+2019-05-03 11:07:01 - [TEST_STEP][PASSED] - openBrowser("https://bookit-qa6.com"): Browser is opened with url: 'https://bookit-qa6.com'
+
+2019-05-03 11:07:01 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-05-03 11:07:06 - [MESSAGE][PASSED] - Browser is opened with url: 'https://bookit-qa6.com'
+
+2019-05-03 11:07:06 - [TEST_STEP][PASSED] - click(findTestObject("homepage/flight_checkbox")): Object: 'Object Repository/homepage/flight_checkbox' is clicked on
+
+2019-05-03 11:07:08 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/flight_checkbox' is clicked on
+
+2019-05-03 11:07:08 - [TEST_STEP][PASSED] - setText(findTestObject("homepage/city_or_airport"), "cheese"): Text 'cheese' is set on object 'Object Repository/homepage/city_or_airport'
+
+2019-05-03 11:07:09 - [MESSAGE][PASSED] - Text 'cheese' is set on object 'Object Repository/homepage/city_or_airport'
+
+2019-05-03 11:07:09 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:07:10 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:07:10 - [TEST_STEP][PASSED] - click(findTestObject("homepage/div_Cheese City IL US")): Object: 'Object Repository/homepage/div_Cheese City IL US' is clicked on
+
+2019-05-03 11:07:10 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/div_Cheese City IL US' is clicked on
+
+2019-05-03 11:07:10 - [TEST_STEP][PASSED] - checkinId = getAttribute(findTestObject("homepage/checkin_date"), "id"): Attribute 'id' of object 'Object Repository/homepage/checkin_date' is: 'ember532-fd'
+
+2019-05-03 11:07:10 - [MESSAGE][PASSED] - Attribute 'id' of object 'Object Repository/homepage/checkin_date' is: 'ember532-fd'
+
+2019-05-03 11:07:10 - [TEST_STEP][PASSED] - checkoutId = getAttribute(findTestObject("homepage/checkout_date"), "id"): Attribute 'id' of object 'Object Repository/homepage/checkout_date' is: 'ember532-td'
+
+2019-05-03 11:07:10 - [MESSAGE][PASSED] - Attribute 'id' of object 'Object Repository/homepage/checkout_date' is: 'ember532-td'
+
+2019-05-03 11:07:10 - [TEST_STEP][PASSED] - iniDate = moIni + "/" + dayIni + "/" + yrIni: null
+
+2019-05-03 11:07:10 - [TEST_STEP][PASSED] - myIniDate = "$('#" + checkinId + "').val('" + iniDate + "')": null
+
+2019-05-03 11:07:10 - [TEST_STEP][PASSED] - endDate = moEnd + "/" + dayEnd + "/" + yrEnd: null
+
+2019-05-03 11:07:10 - [TEST_STEP][PASSED] - myEndDate = "$('#" + checkoutId + "').val('" + endDate + "')": null
+
+2019-05-03 11:07:10 - [TEST_STEP][PASSED] - strMoIni = bookitKeywords.commonFunctions.getMonthName(moIni): bookitKeywords.commonFunctions.getMonthName is PASSED
+
+2019-05-03 11:07:10 - [MESSAGE][PASSED] - bookitKeywords.commonFunctions.getMonthName is PASSED
+
+2019-05-03 11:07:10 - [TEST_STEP][PASSED] - strMoEnd = bookitKeywords.commonFunctions.getMonthName(moEnd): bookitKeywords.commonFunctions.getMonthName is PASSED
+
+2019-05-03 11:07:10 - [MESSAGE][PASSED] - bookitKeywords.commonFunctions.getMonthName is PASSED
+
+2019-05-03 11:07:10 - [TEST_STEP][PASSED] - dIni = Integer.parseInt(dayIni): null
+
+2019-05-03 11:07:10 - [TEST_STEP][PASSED] - dEnd = Integer.parseInt(dayEnd): null
+
+2019-05-03 11:07:10 - [TEST_STEP][PASSED] - println(dIni): null
+
+2019-05-03 11:07:10 - [TEST_STEP][PASSED] - println(dEnd): null
+
+2019-05-03 11:07:10 - [TEST_STEP][PASSED] - click(findTestObject("homepage/checkin_date")): Object: 'Object Repository/homepage/checkin_date' is clicked on
+
+2019-05-03 11:07:10 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/checkin_date' is clicked on
+
+2019-05-03 11:07:10 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:07:11 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:07:11 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("homepage/sel_date_month1"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:07:11 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_month1' is present
+
+2019-05-03 11:07:11 - [TEST_STEP][PASSED] - if (waitForElementClickable(findTestObject("homepage/sel_date_month1"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:07:11 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_month1' is clickable
+
+2019-05-03 11:07:11 - [TEST_STEP][PASSED] - click(findTestObject("homepage/sel_date_month1"), CONTINUE_ON_FAILURE): Object: 'Object Repository/homepage/sel_date_month1' is clicked on
+
+2019-05-03 11:07:11 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/sel_date_month1' is clicked on
+
+2019-05-03 11:07:11 - [TEST_STEP][PASSED] - if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_month1"), strMoIni, false, 1, CONTINUE_ON_FAILURE)): Delayed 1 second(s)
+
+2019-05-03 11:07:12 - [MESSAGE][PASSED] - 1 option(s) with label 'August' is/are present in object 'Object Repository/homepage/sel_date_month1' 
+
+2019-05-03 11:07:12 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("homepage/sel_date_month1"), strMoIni, false, CONTINUE_ON_FAILURE): All options with label 'August' are selected in object 'Object Repository/homepage/sel_date_month1' 
+
+2019-05-03 11:07:12 - [MESSAGE][PASSED] - All options with label 'August' are selected in object 'Object Repository/homepage/sel_date_month1' 
+
+2019-05-03 11:07:12 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:07:13 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:07:13 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("homepage/sel_date_year1"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:07:13 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_year1' is present
+
+2019-05-03 11:07:13 - [TEST_STEP][PASSED] - if (waitForElementClickable(findTestObject("homepage/sel_date_year1"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:07:13 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_year1' is clickable
+
+2019-05-03 11:07:13 - [TEST_STEP][PASSED] - click(findTestObject("homepage/sel_date_year1"), CONTINUE_ON_FAILURE): Object: 'Object Repository/homepage/sel_date_year1' is clicked on
+
+2019-05-03 11:07:13 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/sel_date_year1' is clicked on
+
+2019-05-03 11:07:13 - [TEST_STEP][PASSED] - if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_year1"), yrIni, false, 1, CONTINUE_ON_FAILURE)): Delayed 2 second(s)
+
+2019-05-03 11:07:13 - [MESSAGE][PASSED] - 1 option(s) with label '2019' is/are present in object 'Object Repository/homepage/sel_date_year1' 
+
+2019-05-03 11:07:13 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("homepage/sel_date_year1"), yrIni, false, CONTINUE_ON_FAILURE): All options with label '2019' are selected in object 'Object Repository/homepage/sel_date_year1' 
+
+2019-05-03 11:07:13 - [MESSAGE][PASSED] - All options with label '2019' are selected in object 'Object Repository/homepage/sel_date_year1' 
+
+2019-05-03 11:07:13 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-03 11:07:15 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-03 11:07:15 - [TEST_STEP][PASSED] - dynxpath = "//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '" + dIni + "']) = count(//*[@type = 'button' and @data-pika-day = '" + dIni + "'])]": null
+
+2019-05-03 11:07:15 - [TEST_STEP][PASSED] - to = new com.kms.katalon.core.testobject.TestObject(eldia): null
+
+2019-05-03 11:07:15 - [TEST_STEP][PASSED] - to.addProperty("xpath", EQUALS, dynxpath): null
+
+2019-05-03 11:07:15 - [TEST_STEP][PASSED] - click(to): Object: 'eldia' is clicked on
+
+2019-05-03 11:07:15 - [MESSAGE][PASSED] - Object: 'eldia' is clicked on
+
+2019-05-03 11:07:15 - [TEST_STEP][PASSED] - click(findTestObject("homepage/checkout_date")): Object: 'Object Repository/homepage/checkout_date' is clicked on
+
+2019-05-03 11:07:16 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/checkout_date' is clicked on
+
+2019-05-03 11:07:16 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:07:17 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:07:17 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("homepage/sel_date_month2"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:07:17 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_month2' is present
+
+2019-05-03 11:07:17 - [TEST_STEP][PASSED] - if (waitForElementClickable(findTestObject("homepage/sel_date_month2"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:07:17 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_month2' is clickable
+
+2019-05-03 11:07:17 - [TEST_STEP][PASSED] - click(findTestObject("homepage/sel_date_month2"), CONTINUE_ON_FAILURE): Object: 'Object Repository/homepage/sel_date_month2' is clicked on
+
+2019-05-03 11:07:17 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/sel_date_month2' is clicked on
+
+2019-05-03 11:07:17 - [TEST_STEP][PASSED] - if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_month2"), strMoEnd, false, 1, CONTINUE_ON_FAILURE)): Delayed 2 second(s)
+
+2019-05-03 11:07:17 - [MESSAGE][PASSED] - 1 option(s) with label 'October' is/are present in object 'Object Repository/homepage/sel_date_month2' 
+
+2019-05-03 11:07:17 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("homepage/sel_date_month2"), strMoEnd, false, CONTINUE_ON_FAILURE): All options with label 'October' are selected in object 'Object Repository/homepage/sel_date_month2' 
+
+2019-05-03 11:07:17 - [MESSAGE][PASSED] - All options with label 'October' are selected in object 'Object Repository/homepage/sel_date_month2' 
+
+2019-05-03 11:07:17 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-05-03 11:07:19 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-05-03 11:07:19 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("homepage/sel_date_year2"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:07:19 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_year2' is present
+
+2019-05-03 11:07:19 - [TEST_STEP][PASSED] - if (waitForElementClickable(findTestObject("homepage/sel_date_year2"), 1, CONTINUE_ON_FAILURE)): null
+
+2019-05-03 11:07:19 - [MESSAGE][PASSED] - Object 'Object Repository/homepage/sel_date_year2' is clickable
+
+2019-05-03 11:07:19 - [TEST_STEP][PASSED] - click(findTestObject("homepage/sel_date_year2"), CONTINUE_ON_FAILURE): Object: 'Object Repository/homepage/sel_date_year2' is clicked on
+
+2019-05-03 11:07:19 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/sel_date_year2' is clicked on
+
+2019-05-03 11:07:19 - [TEST_STEP][PASSED] - if (verifyOptionPresentByLabel(findTestObject("homepage/sel_date_year2"), yrEnd, false, 1, CONTINUE_ON_FAILURE)): Delayed 1 second(s)
+
+2019-05-03 11:07:20 - [MESSAGE][PASSED] - 1 option(s) with label '2019' is/are present in object 'Object Repository/homepage/sel_date_year2' 
+
+2019-05-03 11:07:20 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("homepage/sel_date_year2"), yrEnd, false, CONTINUE_ON_FAILURE): All options with label '2019' are selected in object 'Object Repository/homepage/sel_date_year2' 
+
+2019-05-03 11:07:20 - [MESSAGE][PASSED] - All options with label '2019' are selected in object 'Object Repository/homepage/sel_date_year2' 
+
+2019-05-03 11:07:20 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-05-03 11:07:21 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-05-03 11:07:21 - [TEST_STEP][PASSED] - dynxpath2 = "//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '" + dEnd + "']) = count(//*[@type = 'button' and @data-pika-day = '" + dEnd + "'])]": null
+
+2019-05-03 11:07:21 - [TEST_STEP][PASSED] - to2 = new com.kms.katalon.core.testobject.TestObject(eldia2): null
+
+2019-05-03 11:07:21 - [TEST_STEP][PASSED] - to2.addProperty("xpath", EQUALS, dynxpath2): null
+
+2019-05-03 11:07:21 - [TEST_STEP][PASSED] - click(to2): Object: 'eldia2' is clicked on
+
+2019-05-03 11:07:21 - [MESSAGE][PASSED] - Object: 'eldia2' is clicked on
+
+2019-05-03 11:07:21 - [TEST_STEP][PASSED] - click(findTestObject("homepage/button_Search")): Object: 'Object Repository/homepage/button_Search' is clicked on
+
+2019-05-03 11:07:21 - [MESSAGE][PASSED] - Object: 'Object Repository/homepage/button_Search' is clicked on
+
+2019-05-03 11:07:21 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+2019-05-03 11:07:24 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-05-03 11:07:24 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-05-03 11:07:25 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-05-03 11:05:32 - [TEST_SUITE][PASSED] - TestSuiteForBookit: Test Cases/Booking02]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

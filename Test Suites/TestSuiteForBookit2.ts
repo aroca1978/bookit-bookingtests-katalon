@@ -67,9 +67,9 @@
          <variableId>114631a3-ad3c-4dfe-a04b-bfc8fe349b09</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>a7e0fb0d-ed4f-46c9-9e59-e391e2bf1efd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>adults</value>
          <variableId>11bee1fd-6fff-4ff6-a6f7-ec36330d9dfb</variableId>
       </variableLink>
    </testCaseLink>

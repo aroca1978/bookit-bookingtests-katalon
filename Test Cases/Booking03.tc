@@ -55,7 +55,7 @@
       <name>numRooms</name>
    </variable>
    <variable>
-      <defaultValue>'2'</defaultValue>
+      <defaultValue>'2,1'</defaultValue>
       <description></description>
       <id>11bee1fd-6fff-4ff6-a6f7-ec36330d9dfb</id>
       <masked>false</masked>

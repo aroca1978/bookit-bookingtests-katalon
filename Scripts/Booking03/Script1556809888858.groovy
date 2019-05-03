@@ -130,19 +130,22 @@ WebUI.click(to2)
 // ROOMS
 //WebUI.click(findTestObject('homepage/select_rooms'), FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.selectOptionByValue(findTestObject('homepage/select_rooms'), numRooms, false, FailureHandling.CONTINUE_ON_FAILURE)
-
+WebUI.delay(1)
 def tadults = adults.split(",")
 int tnumrooms = Integer.parseInt(numRooms)
-println(tnumrooms);
-println tadults;
+//println(tnumrooms)
+//println(tadults)
 
 for (int i=1; i<=tnumrooms; i++) {
-	TestObject na = new TestObject("numadults")
-	String nadynxpath = "//select[@name='ap" + i + "']"
+	TestObject na = new TestObject("seladults")
+	
+	String nadynxpath = "//div[not(contains(@class, 'hidden-multi-room'))]/div/select[@name='ap" + i + "']"
+	println(nadynxpath)
+	//println("\n" + i + "\n")
 	na.addProperty("xpath", ConditionType.EQUALS, nadynxpath)
 	
 	if (WebUI.verifyElementPresent(na, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
-		println("I'm here")
+		println("\nI'm here\n")
 		WebUI.click(na)
 		
 		if (WebUI.verifyOptionPresentByValue(na, tadults[i-1], false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
@@ -153,11 +156,11 @@ for (int i=1; i<=tnumrooms; i++) {
 }
 
 
-WebUI.delay(5)
-
-
-//WebUI.click(findTestObject('homepage/button_Search'))
-//WebUI.waitForPageLoad(10)
 //WebUI.delay(5)
+
+
+WebUI.click(findTestObject('homepage/button_Search'))
+WebUI.waitForPageLoad(10)
+WebUI.delay(5)
 WebUI.closeBrowser()
 
