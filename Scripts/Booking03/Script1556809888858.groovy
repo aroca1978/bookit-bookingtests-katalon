@@ -138,8 +138,12 @@ int tnumrooms = Integer.parseInt(numRooms)
 
 for (int i=1; i<=tnumrooms; i++) {
 	TestObject na = new TestObject("seladults")
-	
-	String nadynxpath = "//div[not(contains(@class, 'hidden-multi-room'))]/div/select[@name='ap" + i + "']"
+	String nadynxpath
+	if (tnumrooms > 1) {
+		nadynxpath = "//div[not(contains(@class, 'hidden-multi-room'))]/div/select[@name='ap" + i + "']"
+	} else {
+		nadynxpath = "//div[contains(@class, 'hidden-multi-room')]/div/select[@name='ap" + i + "']"
+	}
 	println(nadynxpath)
 	//println("\n" + i + "\n")
 	na.addProperty("xpath", ConditionType.EQUALS, nadynxpath)

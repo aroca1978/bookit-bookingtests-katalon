@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuiteForBookit,,,2019-05-03 11:23:48,2019-05-03 11:23:54,5.673s,FAILED
+,,,,,,
+Test Cases/Booking02,,,2019-05-03 11:23:49,2019-05-03 11:23:51,2.453s,FAILED
+"openBrowser(""https://bookit-qa6.com"")",,,2019-05-03 11:23:49,2019-05-03 11:23:51,2.085s,FAILED
+,,,,,,
+Test Cases/Booking02,,,2019-05-03 11:23:51,2019-05-03 11:23:52,1.032s,FAILED
+"openBrowser(""https://bookit-qa6.com"")",,,2019-05-03 11:23:51,2019-05-03 11:23:52,1.003s,FAILED
+,,,,,,
+Test Cases/Booking02,,,2019-05-03 11:23:52,2019-05-03 11:23:53,0.993s,FAILED
+"openBrowser(""https://bookit-qa6.com"")",,,2019-05-03 11:23:52,2019-05-03 11:23:53,0.969s,FAILED
+,,,,,,
+Test Cases/Booking02,,,2019-05-03 11:23:53,2019-05-03 11:23:54,0.956s,FAILED
+"openBrowser(""https://bookit-qa6.com"")",,,2019-05-03 11:23:53,2019-05-03 11:23:54,0.929s,FAILED
