@@ -72,5 +72,17 @@
          <value>adults</value>
          <variableId>11bee1fd-6fff-4ff6-a6f7-ec36330d9dfb</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7db7029c-c94d-46c8-a50a-e2cd76f7eb01</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5052af63-b5b0-43d3-9af7-cb61a4cb921c</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

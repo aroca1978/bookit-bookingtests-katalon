@@ -20,7 +20,7 @@
       <name>moIni</name>
    </variable>
    <variable>
-      <defaultValue>'03'</defaultValue>
+      <defaultValue>'15'</defaultValue>
       <description></description>
       <id>2a7b0b23-94ea-4403-86c1-51381b32cd02</id>
       <masked>false</masked>
@@ -60,5 +60,19 @@
       <id>11bee1fd-6fff-4ff6-a6f7-ec36330d9dfb</id>
       <masked>false</masked>
       <name>adults</name>
+   </variable>
+   <variable>
+      <defaultValue>'2,3'</defaultValue>
+      <description></description>
+      <id>7db7029c-c94d-46c8-a50a-e2cd76f7eb01</id>
+      <masked>false</masked>
+      <name>children</name>
+   </variable>
+   <variable>
+      <defaultValue>'4,5,8,8,2'</defaultValue>
+      <description></description>
+      <id>5052af63-b5b0-43d3-9af7-cb61a4cb921c</id>
+      <masked>false</masked>
+      <name>childrenages</name>
    </variable>
 </TestCaseEntity>

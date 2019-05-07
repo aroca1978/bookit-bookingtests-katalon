@@ -66,7 +66,8 @@ if (WebUI.verifyElementPresent(findTestObject('homepage/sel_date_month1'), 1, Fa
 		WebUI.click(findTestObject('homepage/sel_date_month1'), FailureHandling.CONTINUE_ON_FAILURE)
 	    if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/sel_date_month1'), strMoIni, false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
 			WebUI.selectOptionByLabel(findTestObject('homepage/sel_date_month1'), strMoIni, false, FailureHandling.CONTINUE_ON_FAILURE)
-			WebUI.delay(1)
+			sleep(200)
+			//WebUI.delay(1)
 		}	
 	}
 }
@@ -77,7 +78,8 @@ if (WebUI.verifyElementPresent(findTestObject('homepage/sel_date_year1'), 1, Fai
 	
 		if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/sel_date_year1'), yrIni, false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
 			WebUI.selectOptionByLabel(findTestObject('homepage/sel_date_year1'), yrIni, false, FailureHandling.CONTINUE_ON_FAILURE)
-			WebUI.delay(1)
+			sleep(200)
+			//WebUI.delay(1)
 		}
 	
 	}
@@ -103,7 +105,8 @@ if (WebUI.verifyElementPresent(findTestObject('homepage/sel_date_month2'), 1, Fa
 		WebUI.click(findTestObject('homepage/sel_date_month2'), FailureHandling.CONTINUE_ON_FAILURE)
 		if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/sel_date_month2'), strMoEnd, false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
 			WebUI.selectOptionByLabel(findTestObject('homepage/sel_date_month2'), strMoEnd, false, FailureHandling.CONTINUE_ON_FAILURE)
-			WebUI.delay(1)
+			sleep(500)
+			//WebUI.delay(1)
 		}
 	}
 }
@@ -114,7 +117,8 @@ if (WebUI.verifyElementPresent(findTestObject('homepage/sel_date_year2'), 1, Fai
 	
 		if (WebUI.verifyOptionPresentByLabel(findTestObject('homepage/sel_date_year2'), yrEnd, false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
 			WebUI.selectOptionByLabel(findTestObject('homepage/sel_date_year2'), yrEnd, false, FailureHandling.CONTINUE_ON_FAILURE)
-			WebUI.delay(1)
+			sleep(500)
+			//WebUI.delay(1)
 		}
 	
 	}
@@ -132,35 +136,77 @@ WebUI.click(to2)
 WebUI.selectOptionByValue(findTestObject('homepage/select_rooms'), numRooms, false, FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.delay(1)
 def tadults = adults.split(",")
+def tchildren = children.split(",")
+def tchildages = childrenages.split(",")
 int tnumrooms = Integer.parseInt(numRooms)
+int curchild = 0;
+
 //println(tnumrooms)
 //println(tadults)
 
 for (int i=1; i<=tnumrooms; i++) {
 	TestObject na = new TestObject("seladults")
+	TestObject nc = new TestObject("selchildren")
 	String nadynxpath
+	String ncdynxpath
+	String cadynxpath
 	if (tnumrooms > 1) {
 		nadynxpath = "//div[not(contains(@class, 'hidden-multi-room'))]/div/select[@name='ap" + i + "']"
+		ncdynxpath = "//div[not(contains(@class, 'hidden-multi-room'))]/div/select[@name='mp" + i + "']"
 	} else {
 		nadynxpath = "//div[contains(@class, 'hidden-multi-room')]/div/select[@name='ap" + i + "']"
+		ncdynxpath = "//div[contains(@class, 'hidden-multi-room')]/div/select[@name='mp" + i + "']"
 	}
-	println(nadynxpath)
+	//println(nadynxpath)
+	//println(ncdynxpath)
 	//println("\n" + i + "\n")
 	na.addProperty("xpath", ConditionType.EQUALS, nadynxpath)
+	nc.addProperty("xpath", ConditionType.EQUALS, ncdynxpath)
 	
 	if (WebUI.verifyElementPresent(na, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
-		println("\nI'm here\n")
+		//println("\nI'm here\n")
 		WebUI.click(na)
 		
 		if (WebUI.verifyOptionPresentByValue(na, tadults[i-1], false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
-			println("Now I am here")
+			//println("Now I am here")
 			WebUI.selectOptionByValue(na, tadults[i-1], false, FailureHandling.CONTINUE_ON_FAILURE)
 		}
 	}
+	if (WebUI.verifyElementPresent(nc, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+		//println("\nI'm here children\n")
+		WebUI.click(nc)
+		
+		if (WebUI.verifyOptionPresentByValue(nc, tchildren[i-1], false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+			//println("Now I am here children")
+			WebUI.selectOptionByValue(nc, tchildren[i-1], false, FailureHandling.CONTINUE_ON_FAILURE)
+		}
+	}
+	for (int j =1; j <= Integer.parseInt(tchildren[i-1]); j++) {
+		
+		if (tnumrooms == 1) {
+			if (j == 1) {
+				nadynxpath = "//div[not(contains(@class, 'hidden-xs'))]/div/div[not(contains(@class, 'hidden-xs')) and (not(contains(@class, 'visible-xs')))]/div/select[@name='ar1m1']"
+			} else {
+				nadynxpath = "//div[not(contains(@class, 'form-group'))]/div/div[not(contains(@class, 'hidden-xs')) and (not(contains(@class, 'visible-xs')))]/div/select[@name='ar1m" + j + "']"
+			}
+		} else {
+			if (j == 1) {
+				nadynxpath = "//div[contains(@class, 'hidden-xs')]/div/select[@name='ar" + i + "m1']"
+			} else {
+				nadynxpath = "//div[contains(@class, 'form-group')]/div/div[not(contains(@class, 'hidden-xs'))]/div/select[@name='ar" + i + "m" + j + "']"
+			}
+		}
+		println("Room: " + i + ", child: " + j + ", age: " + tchildages[curchild])
+		println("nadynxpath: " + nadynxpath)
+		
+		curchild++
+	}
+	
+	
 }
 
 
-//WebUI.delay(5)
+
 
 
 WebUI.click(findTestObject('homepage/button_Search'))
