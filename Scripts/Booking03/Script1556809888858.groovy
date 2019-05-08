@@ -185,19 +185,28 @@ for (int i=1; i<=tnumrooms; i++) {
 		
 		if (tnumrooms == 1) {
 			if (j == 1) {
-				nadynxpath = "//div[not(contains(@class, 'hidden-xs'))]/div/div[not(contains(@class, 'hidden-xs')) and (not(contains(@class, 'visible-xs')))]/div/select[@name='ar1m1']"
+				cadynxpath = "//div[not(contains(@class, 'hidden-xs'))]/div/div[not(contains(@class, 'hidden-xs')) and (not(contains(@class, 'visible-xs')))]/div/select[@name='ar1m1']"
 			} else {
-				nadynxpath = "//div[not(contains(@class, 'form-group'))]/div/div[not(contains(@class, 'hidden-xs')) and (not(contains(@class, 'visible-xs')))]/div/select[@name='ar1m" + j + "']"
+				cadynxpath = "//div[not(contains(@class, 'form-group'))]/div/div[not(contains(@class, 'hidden-xs')) and (not(contains(@class, 'visible-xs')))]/div/select[@name='ar1m" + j + "']"
 			}
 		} else {
 			if (j == 1) {
-				nadynxpath = "//div[contains(@class, 'hidden-xs')]/div/select[@name='ar" + i + "m1']"
+				cadynxpath = "//div[contains(@class, 'hidden-xs')]/div/select[@name='ar" + i + "m1']"
 			} else {
-				nadynxpath = "//div[contains(@class, 'form-group')]/div/div[not(contains(@class, 'hidden-xs'))]/div/select[@name='ar" + i + "m" + j + "']"
+				cadynxpath = "//div[contains(@class, 'form-group')]/div/div[not(contains(@class, 'hidden-xs'))]/div/select[@name='ar" + i + "m" + j + "']"
 			}
 		}
+		TestObject ca = new TestObject("childrenage")
+		ca.addProperty("xpath", ConditionType.EQUALS, cadynxpath)
+		if (WebUI.verifyElementPresent(ca, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+			WebUI.click(ca)
+			if (WebUI.verifyOptionPresentByValue(ca, tchildages[curchild], false, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+				WebUI.selectOptionByValue(ca, tchildages[curchild], false, FailureHandling.CONTINUE_ON_FAILURE)
+			}
+		}
+		
 		println("Room: " + i + ", child: " + j + ", age: " + tchildages[curchild])
-		println("nadynxpath: " + nadynxpath)
+		println("nadynxpath: " + cadynxpath)
 		
 		curchild++
 	}
