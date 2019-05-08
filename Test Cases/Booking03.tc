@@ -75,4 +75,18 @@
       <masked>false</masked>
       <name>childrenages</name>
    </variable>
+   <variable>
+      <defaultValue>'Cheese City Per Person, IL, US'</defaultValue>
+      <description></description>
+      <id>48e96fbd-b06a-4d08-afde-dab3779c8d90</id>
+      <masked>false</masked>
+      <name>city</name>
+   </variable>
+   <variable>
+      <defaultValue>'Cheese Automation'</defaultValue>
+      <description></description>
+      <id>42083300-4795-4ee1-98da-20cdae85b226</id>
+      <masked>false</masked>
+      <name>hotelname</name>
+   </variable>
 </TestCaseEntity>

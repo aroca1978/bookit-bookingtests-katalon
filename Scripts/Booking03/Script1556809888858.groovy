@@ -23,13 +23,15 @@ WebUI.openBrowser('https://bookit-qa6.com')
 
 WebUI.click(findTestObject('homepage/flight_checkbox'))
 
-WebUI.setText(findTestObject('homepage/city_or_airport'), 'cheese')
+WebUI.setText(findTestObject('homepage/city_or_airport'), city)
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('homepage/div_Cheese City IL US'))
+TestObject cit = new TestObject("thecity")
+String cityxpath = "//div[(text() = '" + city + "' or .= '" + city + "')]"
+cit.addProperty("xpath", ConditionType.EQUALS, cityxpath)
+WebUI.click(cit)
 
-//WebUI.delay(1)
 
 checkinId = WebUI.getAttribute(findTestObject('homepage/checkin_date'), 'id')
 
@@ -220,6 +222,14 @@ for (int i=1; i<=tnumrooms; i++) {
 
 WebUI.click(findTestObject('homepage/button_Search'))
 WebUI.waitForPageLoad(10)
-WebUI.delay(5)
+WebUI.delay(3)
+String selbutxpath = "//div[text()[contains(.,'" + hotelname + "')] and contains(@class, 'art-hotel-name')]/following::a[contains(text(), 'Select Hotel')][1]"
+TestObject selhot = new TestObject("selecthotel")
+selhot.addProperty("xpath", ConditionType.EQUALS, selbutxpath)
+if (WebUI.verifyElementPresent(selhot, 1, FailureHandling.CONTINUE_ON_FAILURE)) {
+	WebUI.scrollToElement(selhot, 3)
+	WebUI.click(selhot)
+	WebUI.delay(5)
+}
 WebUI.closeBrowser()
 

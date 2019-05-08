@@ -73,16 +73,28 @@
          <variableId>11bee1fd-6fff-4ff6-a6f7-ec36330d9dfb</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>a7e0fb0d-ed4f-46c9-9e59-e391e2bf1efd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>children</value>
          <variableId>7db7029c-c94d-46c8-a50a-e2cd76f7eb01</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>a7e0fb0d-ed4f-46c9-9e59-e391e2bf1efd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>childrenages</value>
          <variableId>5052af63-b5b0-43d3-9af7-cb61a4cb921c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>a7e0fb0d-ed4f-46c9-9e59-e391e2bf1efd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>City</value>
+         <variableId>48e96fbd-b06a-4d08-afde-dab3779c8d90</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>a7e0fb0d-ed4f-46c9-9e59-e391e2bf1efd</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>hotelname</value>
+         <variableId>42083300-4795-4ee1-98da-20cdae85b226</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

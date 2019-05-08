@@ -1,0 +1,190 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuiteForBookit2,Chrome 74.0.3729.131,,2019-05-08 10:09:28,2019-05-08 10:11:14,1m - 46.221s,PASSED
+,,,,,,
+Test Cases/Booking03,Chrome 74.0.3729.131,,2019-05-08 10:09:28,2019-05-08 10:09:56,27.975s,PASSED
+"openBrowser(""https://bookit-qa6.com"")",Chrome 74.0.3729.131,,2019-05-08 10:09:29,2019-05-08 10:09:35,5.596s,PASSED
+"click(findTestObject(""homepage/flight_checkbox""))",Chrome 74.0.3729.131,,2019-05-08 10:09:35,2019-05-08 10:09:37,2.579s,PASSED
+"setText(findTestObject(""homepage/city_or_airport""), ""cheese"")",Chrome 74.0.3729.131,,2019-05-08 10:09:37,2019-05-08 10:09:38,0.459s,PASSED
+delay(1),Chrome 74.0.3729.131,,2019-05-08 10:09:38,2019-05-08 10:09:39,1.025s,PASSED
+"click(findTestObject(""homepage/div_Cheese City IL US""))",Chrome 74.0.3729.131,,2019-05-08 10:09:39,2019-05-08 10:09:39,0.134s,PASSED
+"checkinId = getAttribute(findTestObject(""homepage/checkin_date""), ""id"")",Chrome 74.0.3729.131,,2019-05-08 10:09:39,2019-05-08 10:09:39,0.050s,PASSED
+"checkoutId = getAttribute(findTestObject(""homepage/checkout_date""), ""id"")",Chrome 74.0.3729.131,,2019-05-08 10:09:39,2019-05-08 10:09:39,0.058s,PASSED
+"iniDate = moIni + ""/"" + dayIni + ""/"" + yrIni",Chrome 74.0.3729.131,,2019-05-08 10:09:39,2019-05-08 10:09:39,0.002s,PASSED
+"myIniDate = ""$('#"" + checkinId + ""').val('"" + iniDate + ""')""",Chrome 74.0.3729.131,,2019-05-08 10:09:39,2019-05-08 10:09:39,0.002s,PASSED
+"endDate = moEnd + ""/"" + dayEnd + ""/"" + yrEnd",Chrome 74.0.3729.131,,2019-05-08 10:09:39,2019-05-08 10:09:39,0.001s,PASSED
+"myEndDate = ""$('#"" + checkoutId + ""').val('"" + endDate + ""')""",Chrome 74.0.3729.131,,2019-05-08 10:09:39,2019-05-08 10:09:39,0.001s,PASSED
+strMoIni = bookitKeywords.commonFunctions.getMonthName(moIni),Chrome 74.0.3729.131,,2019-05-08 10:09:39,2019-05-08 10:09:39,0.010s,PASSED
+strMoEnd = bookitKeywords.commonFunctions.getMonthName(moEnd),Chrome 74.0.3729.131,,2019-05-08 10:09:39,2019-05-08 10:09:39,0.002s,PASSED
+dIni = Integer.parseInt(dayIni),Chrome 74.0.3729.131,,2019-05-08 10:09:39,2019-05-08 10:09:39,0.003s,PASSED
+dEnd = Integer.parseInt(dayEnd),Chrome 74.0.3729.131,,2019-05-08 10:09:39,2019-05-08 10:09:39,0.002s,PASSED
+println(dIni),Chrome 74.0.3729.131,,2019-05-08 10:09:39,2019-05-08 10:09:39,0.004s,PASSED
+println(dEnd),Chrome 74.0.3729.131,,2019-05-08 10:09:39,2019-05-08 10:09:39,0.000s,PASSED
+"click(findTestObject(""homepage/checkin_date""))",Chrome 74.0.3729.131,,2019-05-08 10:09:39,2019-05-08 10:09:39,0.122s,PASSED
+delay(1),Chrome 74.0.3729.131,,2019-05-08 10:09:39,2019-05-08 10:09:40,1.003s,PASSED
+"if (verifyElementPresent(findTestObject(""homepage/sel_date_month1""), 1, CONTINUE_ON_FAILURE))",Chrome 74.0.3729.131,,2019-05-08 10:09:40,2019-05-08 10:09:41,0.841s,PASSED
+"if (verifyElementPresent(findTestObject(""homepage/sel_date_year1""), 1, CONTINUE_ON_FAILURE))",Chrome 74.0.3729.131,,2019-05-08 10:09:41,2019-05-08 10:09:42,0.635s,PASSED
+"dynxpath = ""//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '"" + dIni + ""']) = count(//*[@type = 'button' and @data-pika-day = '"" + dIni + ""'])]""",Chrome 74.0.3729.131,,2019-05-08 10:09:42,2019-05-08 10:09:42,0.015s,PASSED
+to = new com.kms.katalon.core.testobject.TestObject(eldia),Chrome 74.0.3729.131,,2019-05-08 10:09:42,2019-05-08 10:09:42,0.000s,PASSED
+"to.addProperty(""xpath"", EQUALS, dynxpath)",Chrome 74.0.3729.131,,2019-05-08 10:09:42,2019-05-08 10:09:42,0.016s,PASSED
+click(to),Chrome 74.0.3729.131,,2019-05-08 10:09:42,2019-05-08 10:09:42,0.185s,PASSED
+"click(findTestObject(""homepage/checkout_date""))",Chrome 74.0.3729.131,,2019-05-08 10:09:42,2019-05-08 10:09:42,0.130s,PASSED
+delay(1),Chrome 74.0.3729.131,,2019-05-08 10:09:42,2019-05-08 10:09:43,1.004s,PASSED
+"if (verifyElementPresent(findTestObject(""homepage/sel_date_month2""), 1, CONTINUE_ON_FAILURE))",Chrome 74.0.3729.131,,2019-05-08 10:09:43,2019-05-08 10:09:44,1.140s,PASSED
+"if (verifyElementPresent(findTestObject(""homepage/sel_date_year2""), 1, CONTINUE_ON_FAILURE))",Chrome 74.0.3729.131,,2019-05-08 10:09:44,2019-05-08 10:09:45,0.901s,PASSED
+"dynxpath2 = ""//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '"" + dEnd + ""']) = count(//*[@type = 'button' and @data-pika-day = '"" + dEnd + ""'])]""",Chrome 74.0.3729.131,,2019-05-08 10:09:45,2019-05-08 10:09:45,0.016s,PASSED
+to2 = new com.kms.katalon.core.testobject.TestObject(eldia2),Chrome 74.0.3729.131,,2019-05-08 10:09:45,2019-05-08 10:09:45,0.016s,PASSED
+"to2.addProperty(""xpath"", EQUALS, dynxpath2)",Chrome 74.0.3729.131,,2019-05-08 10:09:45,2019-05-08 10:09:45,0.000s,PASSED
+click(to2),Chrome 74.0.3729.131,,2019-05-08 10:09:45,2019-05-08 10:09:45,0.186s,PASSED
+"selectOptionByValue(findTestObject(""homepage/select_rooms""), numRooms, false, CONTINUE_ON_FAILURE)",Chrome 74.0.3729.131,,2019-05-08 10:09:45,2019-05-08 10:09:45,0.092s,PASSED
+delay(1),Chrome 74.0.3729.131,,2019-05-08 10:09:45,2019-05-08 10:09:46,1.002s,PASSED
+"tadults = adults.split("","")",Chrome 74.0.3729.131,,2019-05-08 10:09:46,2019-05-08 10:09:46,0.005s,PASSED
+"tchildren = children.split("","")",Chrome 74.0.3729.131,,2019-05-08 10:09:46,2019-05-08 10:09:46,0.001s,PASSED
+"tchildages = childrenages.split("","")",Chrome 74.0.3729.131,,2019-05-08 10:09:46,2019-05-08 10:09:46,0.009s,PASSED
+tnumrooms = Integer.parseInt(numRooms),Chrome 74.0.3729.131,,2019-05-08 10:09:46,2019-05-08 10:09:46,0.003s,PASSED
+curchild = 0,Chrome 74.0.3729.131,,2019-05-08 10:09:46,2019-05-08 10:09:46,0.002s,PASSED
+"for ([i = 1, i <= tnumrooms, (i++)])",Chrome 74.0.3729.131,,2019-05-08 10:09:46,2019-05-08 10:09:48,1.648s,PASSED
+"click(findTestObject(""homepage/button_Search""))",Chrome 74.0.3729.131,,2019-05-08 10:09:48,2019-05-08 10:09:48,0.128s,PASSED
+waitForPageLoad(10),Chrome 74.0.3729.131,,2019-05-08 10:09:48,2019-05-08 10:09:51,2.454s,PASSED
+delay(5),Chrome 74.0.3729.131,,2019-05-08 10:09:51,2019-05-08 10:09:56,5.002s,PASSED
+closeBrowser(),Chrome 74.0.3729.131,,2019-05-08 10:09:56,2019-05-08 10:09:56,0.689s,PASSED
+,,,,,,
+Test Cases/Booking03,Chrome 74.0.3729.131,,2019-05-08 10:09:56,2019-05-08 10:10:21,25.096s,PASSED
+"openBrowser(""https://bookit-qa6.com"")",Chrome 74.0.3729.131,,2019-05-08 10:09:56,2019-05-08 10:10:01,4.346s,PASSED
+"click(findTestObject(""homepage/flight_checkbox""))",Chrome 74.0.3729.131,,2019-05-08 10:10:01,2019-05-08 10:10:02,1.586s,PASSED
+"setText(findTestObject(""homepage/city_or_airport""), ""cheese"")",Chrome 74.0.3729.131,,2019-05-08 10:10:02,2019-05-08 10:10:03,0.825s,PASSED
+delay(1),Chrome 74.0.3729.131,,2019-05-08 10:10:03,2019-05-08 10:10:04,1.003s,PASSED
+"click(findTestObject(""homepage/div_Cheese City IL US""))",Chrome 74.0.3729.131,,2019-05-08 10:10:04,2019-05-08 10:10:04,0.116s,PASSED
+"checkinId = getAttribute(findTestObject(""homepage/checkin_date""), ""id"")",Chrome 74.0.3729.131,,2019-05-08 10:10:04,2019-05-08 10:10:04,0.035s,PASSED
+"checkoutId = getAttribute(findTestObject(""homepage/checkout_date""), ""id"")",Chrome 74.0.3729.131,,2019-05-08 10:10:04,2019-05-08 10:10:04,0.146s,PASSED
+"iniDate = moIni + ""/"" + dayIni + ""/"" + yrIni",Chrome 74.0.3729.131,,2019-05-08 10:10:04,2019-05-08 10:10:04,0.000s,PASSED
+"myIniDate = ""$('#"" + checkinId + ""').val('"" + iniDate + ""')""",Chrome 74.0.3729.131,,2019-05-08 10:10:04,2019-05-08 10:10:04,0.000s,PASSED
+"endDate = moEnd + ""/"" + dayEnd + ""/"" + yrEnd",Chrome 74.0.3729.131,,2019-05-08 10:10:04,2019-05-08 10:10:04,0.000s,PASSED
+"myEndDate = ""$('#"" + checkoutId + ""').val('"" + endDate + ""')""",Chrome 74.0.3729.131,,2019-05-08 10:10:04,2019-05-08 10:10:04,0.000s,PASSED
+strMoIni = bookitKeywords.commonFunctions.getMonthName(moIni),Chrome 74.0.3729.131,,2019-05-08 10:10:04,2019-05-08 10:10:04,0.001s,PASSED
+strMoEnd = bookitKeywords.commonFunctions.getMonthName(moEnd),Chrome 74.0.3729.131,,2019-05-08 10:10:04,2019-05-08 10:10:04,0.001s,PASSED
+dIni = Integer.parseInt(dayIni),Chrome 74.0.3729.131,,2019-05-08 10:10:04,2019-05-08 10:10:04,0.000s,PASSED
+dEnd = Integer.parseInt(dayEnd),Chrome 74.0.3729.131,,2019-05-08 10:10:04,2019-05-08 10:10:04,0.000s,PASSED
+println(dIni),Chrome 74.0.3729.131,,2019-05-08 10:10:04,2019-05-08 10:10:04,0.001s,PASSED
+println(dEnd),Chrome 74.0.3729.131,,2019-05-08 10:10:04,2019-05-08 10:10:04,0.001s,PASSED
+"click(findTestObject(""homepage/checkin_date""))",Chrome 74.0.3729.131,,2019-05-08 10:10:04,2019-05-08 10:10:04,0.110s,PASSED
+delay(1),Chrome 74.0.3729.131,,2019-05-08 10:10:04,2019-05-08 10:10:05,1.002s,PASSED
+"if (verifyElementPresent(findTestObject(""homepage/sel_date_month1""), 1, CONTINUE_ON_FAILURE))",Chrome 74.0.3729.131,,2019-05-08 10:10:05,2019-05-08 10:10:06,0.804s,PASSED
+"if (verifyElementPresent(findTestObject(""homepage/sel_date_year1""), 1, CONTINUE_ON_FAILURE))",Chrome 74.0.3729.131,,2019-05-08 10:10:06,2019-05-08 10:10:07,0.538s,PASSED
+"dynxpath = ""//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '"" + dIni + ""']) = count(//*[@type = 'button' and @data-pika-day = '"" + dIni + ""'])]""",Chrome 74.0.3729.131,,2019-05-08 10:10:07,2019-05-08 10:10:07,0.001s,PASSED
+to = new com.kms.katalon.core.testobject.TestObject(eldia),Chrome 74.0.3729.131,,2019-05-08 10:10:07,2019-05-08 10:10:07,0.000s,PASSED
+"to.addProperty(""xpath"", EQUALS, dynxpath)",Chrome 74.0.3729.131,,2019-05-08 10:10:07,2019-05-08 10:10:07,0.015s,PASSED
+click(to),Chrome 74.0.3729.131,,2019-05-08 10:10:07,2019-05-08 10:10:07,0.183s,PASSED
+"click(findTestObject(""homepage/checkout_date""))",Chrome 74.0.3729.131,,2019-05-08 10:10:07,2019-05-08 10:10:07,0.103s,PASSED
+delay(1),Chrome 74.0.3729.131,,2019-05-08 10:10:07,2019-05-08 10:10:08,1.002s,PASSED
+"if (verifyElementPresent(findTestObject(""homepage/sel_date_month2""), 1, CONTINUE_ON_FAILURE))",Chrome 74.0.3729.131,,2019-05-08 10:10:08,2019-05-08 10:10:09,1.095s,PASSED
+"if (verifyElementPresent(findTestObject(""homepage/sel_date_year2""), 1, CONTINUE_ON_FAILURE))",Chrome 74.0.3729.131,,2019-05-08 10:10:09,2019-05-08 10:10:10,0.856s,PASSED
+"dynxpath2 = ""//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '"" + dEnd + ""']) = count(//*[@type = 'button' and @data-pika-day = '"" + dEnd + ""'])]""",Chrome 74.0.3729.131,,2019-05-08 10:10:10,2019-05-08 10:10:10,0.000s,PASSED
+to2 = new com.kms.katalon.core.testobject.TestObject(eldia2),Chrome 74.0.3729.131,,2019-05-08 10:10:10,2019-05-08 10:10:10,0.000s,PASSED
+"to2.addProperty(""xpath"", EQUALS, dynxpath2)",Chrome 74.0.3729.131,,2019-05-08 10:10:10,2019-05-08 10:10:10,0.001s,PASSED
+click(to2),Chrome 74.0.3729.131,,2019-05-08 10:10:10,2019-05-08 10:10:10,0.194s,PASSED
+"selectOptionByValue(findTestObject(""homepage/select_rooms""), numRooms, false, CONTINUE_ON_FAILURE)",Chrome 74.0.3729.131,,2019-05-08 10:10:10,2019-05-08 10:10:10,0.074s,PASSED
+delay(1),Chrome 74.0.3729.131,,2019-05-08 10:10:10,2019-05-08 10:10:11,1.003s,PASSED
+"tadults = adults.split("","")",Chrome 74.0.3729.131,,2019-05-08 10:10:11,2019-05-08 10:10:11,0.000s,PASSED
+"tchildren = children.split("","")",Chrome 74.0.3729.131,,2019-05-08 10:10:11,2019-05-08 10:10:11,0.000s,PASSED
+"tchildages = childrenages.split("","")",Chrome 74.0.3729.131,,2019-05-08 10:10:11,2019-05-08 10:10:11,0.001s,PASSED
+tnumrooms = Integer.parseInt(numRooms),Chrome 74.0.3729.131,,2019-05-08 10:10:11,2019-05-08 10:10:11,0.000s,PASSED
+curchild = 0,Chrome 74.0.3729.131,,2019-05-08 10:10:11,2019-05-08 10:10:11,0.000s,PASSED
+"for ([i = 1, i <= tnumrooms, (i++)])",Chrome 74.0.3729.131,,2019-05-08 10:10:11,2019-05-08 10:10:13,1.511s,PASSED
+"click(findTestObject(""homepage/button_Search""))",Chrome 74.0.3729.131,,2019-05-08 10:10:13,2019-05-08 10:10:13,0.136s,PASSED
+waitForPageLoad(10),Chrome 74.0.3729.131,,2019-05-08 10:10:13,2019-05-08 10:10:16,2.645s,PASSED
+delay(5),Chrome 74.0.3729.131,,2019-05-08 10:10:16,2019-05-08 10:10:21,5.003s,PASSED
+closeBrowser(),Chrome 74.0.3729.131,,2019-05-08 10:10:21,2019-05-08 10:10:21,0.693s,PASSED
+,,,,,,
+Test Cases/Booking03,Chrome 74.0.3729.131,,2019-05-08 10:10:21,2019-05-08 10:10:49,27.894s,PASSED
+"openBrowser(""https://bookit-qa6.com"")",Chrome 74.0.3729.131,,2019-05-08 10:10:22,2019-05-08 10:10:26,4.016s,PASSED
+"click(findTestObject(""homepage/flight_checkbox""))",Chrome 74.0.3729.131,,2019-05-08 10:10:26,2019-05-08 10:10:28,1.980s,PASSED
+"setText(findTestObject(""homepage/city_or_airport""), ""cheese"")",Chrome 74.0.3729.131,,2019-05-08 10:10:28,2019-05-08 10:10:28,0.213s,PASSED
+delay(1),Chrome 74.0.3729.131,,2019-05-08 10:10:28,2019-05-08 10:10:29,1.001s,PASSED
+"click(findTestObject(""homepage/div_Cheese City IL US""))",Chrome 74.0.3729.131,,2019-05-08 10:10:29,2019-05-08 10:10:29,0.116s,PASSED
+"checkinId = getAttribute(findTestObject(""homepage/checkin_date""), ""id"")",Chrome 74.0.3729.131,,2019-05-08 10:10:29,2019-05-08 10:10:29,0.032s,PASSED
+"checkoutId = getAttribute(findTestObject(""homepage/checkout_date""), ""id"")",Chrome 74.0.3729.131,,2019-05-08 10:10:29,2019-05-08 10:10:29,0.033s,PASSED
+"iniDate = moIni + ""/"" + dayIni + ""/"" + yrIni",Chrome 74.0.3729.131,,2019-05-08 10:10:29,2019-05-08 10:10:29,0.000s,PASSED
+"myIniDate = ""$('#"" + checkinId + ""').val('"" + iniDate + ""')""",Chrome 74.0.3729.131,,2019-05-08 10:10:29,2019-05-08 10:10:29,0.000s,PASSED
+"endDate = moEnd + ""/"" + dayEnd + ""/"" + yrEnd",Chrome 74.0.3729.131,,2019-05-08 10:10:29,2019-05-08 10:10:29,0.001s,PASSED
+"myEndDate = ""$('#"" + checkoutId + ""').val('"" + endDate + ""')""",Chrome 74.0.3729.131,,2019-05-08 10:10:29,2019-05-08 10:10:29,0.000s,PASSED
+strMoIni = bookitKeywords.commonFunctions.getMonthName(moIni),Chrome 74.0.3729.131,,2019-05-08 10:10:29,2019-05-08 10:10:29,0.001s,PASSED
+strMoEnd = bookitKeywords.commonFunctions.getMonthName(moEnd),Chrome 74.0.3729.131,,2019-05-08 10:10:29,2019-05-08 10:10:29,0.000s,PASSED
+dIni = Integer.parseInt(dayIni),Chrome 74.0.3729.131,,2019-05-08 10:10:29,2019-05-08 10:10:29,0.000s,PASSED
+dEnd = Integer.parseInt(dayEnd),Chrome 74.0.3729.131,,2019-05-08 10:10:29,2019-05-08 10:10:29,0.000s,PASSED
+println(dIni),Chrome 74.0.3729.131,,2019-05-08 10:10:29,2019-05-08 10:10:29,0.000s,PASSED
+println(dEnd),Chrome 74.0.3729.131,,2019-05-08 10:10:29,2019-05-08 10:10:29,0.001s,PASSED
+"click(findTestObject(""homepage/checkin_date""))",Chrome 74.0.3729.131,,2019-05-08 10:10:29,2019-05-08 10:10:29,0.113s,PASSED
+delay(1),Chrome 74.0.3729.131,,2019-05-08 10:10:29,2019-05-08 10:10:30,1.002s,PASSED
+"if (verifyElementPresent(findTestObject(""homepage/sel_date_month1""), 1, CONTINUE_ON_FAILURE))",Chrome 74.0.3729.131,,2019-05-08 10:10:30,2019-05-08 10:10:31,0.736s,PASSED
+"if (verifyElementPresent(findTestObject(""homepage/sel_date_year1""), 1, CONTINUE_ON_FAILURE))",Chrome 74.0.3729.131,,2019-05-08 10:10:31,2019-05-08 10:10:31,0.590s,PASSED
+"dynxpath = ""//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '"" + dIni + ""']) = count(//*[@type = 'button' and @data-pika-day = '"" + dIni + ""'])]""",Chrome 74.0.3729.131,,2019-05-08 10:10:31,2019-05-08 10:10:31,0.015s,PASSED
+to = new com.kms.katalon.core.testobject.TestObject(eldia),Chrome 74.0.3729.131,,2019-05-08 10:10:31,2019-05-08 10:10:31,0.016s,PASSED
+"to.addProperty(""xpath"", EQUALS, dynxpath)",Chrome 74.0.3729.131,,2019-05-08 10:10:31,2019-05-08 10:10:31,0.000s,PASSED
+click(to),Chrome 74.0.3729.131,,2019-05-08 10:10:31,2019-05-08 10:10:32,0.199s,PASSED
+"click(findTestObject(""homepage/checkout_date""))",Chrome 74.0.3729.131,,2019-05-08 10:10:32,2019-05-08 10:10:32,0.089s,PASSED
+delay(1),Chrome 74.0.3729.131,,2019-05-08 10:10:32,2019-05-08 10:10:33,1.004s,PASSED
+"if (verifyElementPresent(findTestObject(""homepage/sel_date_month2""), 1, CONTINUE_ON_FAILURE))",Chrome 74.0.3729.131,,2019-05-08 10:10:33,2019-05-08 10:10:34,1.086s,PASSED
+"if (verifyElementPresent(findTestObject(""homepage/sel_date_year2""), 1, CONTINUE_ON_FAILURE))",Chrome 74.0.3729.131,,2019-05-08 10:10:34,2019-05-08 10:10:35,0.859s,PASSED
+"dynxpath2 = ""//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '"" + dEnd + ""']) = count(//*[@type = 'button' and @data-pika-day = '"" + dEnd + ""'])]""",Chrome 74.0.3729.131,,2019-05-08 10:10:35,2019-05-08 10:10:35,0.001s,PASSED
+to2 = new com.kms.katalon.core.testobject.TestObject(eldia2),Chrome 74.0.3729.131,,2019-05-08 10:10:35,2019-05-08 10:10:35,0.000s,PASSED
+"to2.addProperty(""xpath"", EQUALS, dynxpath2)",Chrome 74.0.3729.131,,2019-05-08 10:10:35,2019-05-08 10:10:35,0.000s,PASSED
+click(to2),Chrome 74.0.3729.131,,2019-05-08 10:10:35,2019-05-08 10:10:35,0.231s,PASSED
+"selectOptionByValue(findTestObject(""homepage/select_rooms""), numRooms, false, CONTINUE_ON_FAILURE)",Chrome 74.0.3729.131,,2019-05-08 10:10:35,2019-05-08 10:10:35,0.176s,PASSED
+delay(1),Chrome 74.0.3729.131,,2019-05-08 10:10:35,2019-05-08 10:10:36,1.002s,PASSED
+"tadults = adults.split("","")",Chrome 74.0.3729.131,,2019-05-08 10:10:36,2019-05-08 10:10:36,0.000s,PASSED
+"tchildren = children.split("","")",Chrome 74.0.3729.131,,2019-05-08 10:10:36,2019-05-08 10:10:36,0.001s,PASSED
+"tchildages = childrenages.split("","")",Chrome 74.0.3729.131,,2019-05-08 10:10:36,2019-05-08 10:10:36,0.000s,PASSED
+tnumrooms = Integer.parseInt(numRooms),Chrome 74.0.3729.131,,2019-05-08 10:10:36,2019-05-08 10:10:36,0.000s,PASSED
+curchild = 0,Chrome 74.0.3729.131,,2019-05-08 10:10:36,2019-05-08 10:10:36,0.000s,PASSED
+"for ([i = 1, i <= tnumrooms, (i++)])",Chrome 74.0.3729.131,,2019-05-08 10:10:36,2019-05-08 10:10:41,4.983s,PASSED
+"click(findTestObject(""homepage/button_Search""))",Chrome 74.0.3729.131,,2019-05-08 10:10:41,2019-05-08 10:10:41,0.133s,PASSED
+waitForPageLoad(10),Chrome 74.0.3729.131,,2019-05-08 10:10:41,2019-05-08 10:10:44,2.379s,PASSED
+delay(5),Chrome 74.0.3729.131,,2019-05-08 10:10:44,2019-05-08 10:10:49,5.003s,PASSED
+closeBrowser(),Chrome 74.0.3729.131,,2019-05-08 10:10:49,2019-05-08 10:10:49,0.713s,PASSED
+,,,,,,
+Test Cases/Booking03,Chrome 74.0.3729.131,,2019-05-08 10:10:49,2019-05-08 10:11:14,24.798s,PASSED
+"openBrowser(""https://bookit-qa6.com"")",Chrome 74.0.3729.131,,2019-05-08 10:10:49,2019-05-08 10:10:54,4.454s,PASSED
+"click(findTestObject(""homepage/flight_checkbox""))",Chrome 74.0.3729.131,,2019-05-08 10:10:54,2019-05-08 10:10:56,1.893s,PASSED
+"setText(findTestObject(""homepage/city_or_airport""), ""cheese"")",Chrome 74.0.3729.131,,2019-05-08 10:10:56,2019-05-08 10:10:56,0.388s,PASSED
+delay(1),Chrome 74.0.3729.131,,2019-05-08 10:10:56,2019-05-08 10:10:57,1.002s,PASSED
+"click(findTestObject(""homepage/div_Cheese City IL US""))",Chrome 74.0.3729.131,,2019-05-08 10:10:57,2019-05-08 10:10:57,0.115s,PASSED
+"checkinId = getAttribute(findTestObject(""homepage/checkin_date""), ""id"")",Chrome 74.0.3729.131,,2019-05-08 10:10:57,2019-05-08 10:10:57,0.035s,PASSED
+"checkoutId = getAttribute(findTestObject(""homepage/checkout_date""), ""id"")",Chrome 74.0.3729.131,,2019-05-08 10:10:57,2019-05-08 10:10:57,0.038s,PASSED
+"iniDate = moIni + ""/"" + dayIni + ""/"" + yrIni",Chrome 74.0.3729.131,,2019-05-08 10:10:57,2019-05-08 10:10:57,0.000s,PASSED
+"myIniDate = ""$('#"" + checkinId + ""').val('"" + iniDate + ""')""",Chrome 74.0.3729.131,,2019-05-08 10:10:57,2019-05-08 10:10:57,0.001s,PASSED
+"endDate = moEnd + ""/"" + dayEnd + ""/"" + yrEnd",Chrome 74.0.3729.131,,2019-05-08 10:10:57,2019-05-08 10:10:57,0.000s,PASSED
+"myEndDate = ""$('#"" + checkoutId + ""').val('"" + endDate + ""')""",Chrome 74.0.3729.131,,2019-05-08 10:10:57,2019-05-08 10:10:57,0.000s,PASSED
+strMoIni = bookitKeywords.commonFunctions.getMonthName(moIni),Chrome 74.0.3729.131,,2019-05-08 10:10:57,2019-05-08 10:10:57,0.000s,PASSED
+strMoEnd = bookitKeywords.commonFunctions.getMonthName(moEnd),Chrome 74.0.3729.131,,2019-05-08 10:10:57,2019-05-08 10:10:57,0.000s,PASSED
+dIni = Integer.parseInt(dayIni),Chrome 74.0.3729.131,,2019-05-08 10:10:57,2019-05-08 10:10:57,0.001s,PASSED
+dEnd = Integer.parseInt(dayEnd),Chrome 74.0.3729.131,,2019-05-08 10:10:57,2019-05-08 10:10:57,0.000s,PASSED
+println(dIni),Chrome 74.0.3729.131,,2019-05-08 10:10:57,2019-05-08 10:10:57,0.002s,PASSED
+println(dEnd),Chrome 74.0.3729.131,,2019-05-08 10:10:57,2019-05-08 10:10:57,0.000s,PASSED
+"click(findTestObject(""homepage/checkin_date""))",Chrome 74.0.3729.131,,2019-05-08 10:10:57,2019-05-08 10:10:57,0.106s,PASSED
+delay(1),Chrome 74.0.3729.131,,2019-05-08 10:10:57,2019-05-08 10:10:58,1.002s,PASSED
+"if (verifyElementPresent(findTestObject(""homepage/sel_date_month1""), 1, CONTINUE_ON_FAILURE))",Chrome 74.0.3729.131,,2019-05-08 10:10:58,2019-05-08 10:10:59,0.797s,PASSED
+"if (verifyElementPresent(findTestObject(""homepage/sel_date_year1""), 1, CONTINUE_ON_FAILURE))",Chrome 74.0.3729.131,,2019-05-08 10:10:59,2019-05-08 10:11:00,0.545s,PASSED
+"dynxpath = ""//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '"" + dIni + ""']) = count(//*[@type = 'button' and @data-pika-day = '"" + dIni + ""'])]""",Chrome 74.0.3729.131,,2019-05-08 10:11:00,2019-05-08 10:11:00,0.001s,PASSED
+to = new com.kms.katalon.core.testobject.TestObject(eldia),Chrome 74.0.3729.131,,2019-05-08 10:11:00,2019-05-08 10:11:00,0.001s,PASSED
+"to.addProperty(""xpath"", EQUALS, dynxpath)",Chrome 74.0.3729.131,,2019-05-08 10:11:00,2019-05-08 10:11:00,0.000s,PASSED
+click(to),Chrome 74.0.3729.131,,2019-05-08 10:11:00,2019-05-08 10:11:00,0.205s,PASSED
+"click(findTestObject(""homepage/checkout_date""))",Chrome 74.0.3729.131,,2019-05-08 10:11:00,2019-05-08 10:11:00,0.106s,PASSED
+delay(1),Chrome 74.0.3729.131,,2019-05-08 10:11:00,2019-05-08 10:11:01,1.002s,PASSED
+"if (verifyElementPresent(findTestObject(""homepage/sel_date_month2""), 1, CONTINUE_ON_FAILURE))",Chrome 74.0.3729.131,,2019-05-08 10:11:01,2019-05-08 10:11:02,1.079s,PASSED
+"if (verifyElementPresent(findTestObject(""homepage/sel_date_year2""), 1, CONTINUE_ON_FAILURE))",Chrome 74.0.3729.131,,2019-05-08 10:11:02,2019-05-08 10:11:03,0.842s,PASSED
+"dynxpath2 = ""//div[contains(@class, 'pika-single') and contains(@class, 'is-bound') and not(contains(@class, 'is-hidden'))]/div[@class='pika-lendar'][1]/table[@class='pika-table']/tbody/tr/td/button[count(. | //*[@type = 'button' and @data-pika-day = '"" + dEnd + ""']) = count(//*[@type = 'button' and @data-pika-day = '"" + dEnd + ""'])]""",Chrome 74.0.3729.131,,2019-05-08 10:11:03,2019-05-08 10:11:03,0.000s,PASSED
+to2 = new com.kms.katalon.core.testobject.TestObject(eldia2),Chrome 74.0.3729.131,,2019-05-08 10:11:03,2019-05-08 10:11:03,0.000s,PASSED
+"to2.addProperty(""xpath"", EQUALS, dynxpath2)",Chrome 74.0.3729.131,,2019-05-08 10:11:03,2019-05-08 10:11:03,0.016s,PASSED
+click(to2),Chrome 74.0.3729.131,,2019-05-08 10:11:03,2019-05-08 10:11:03,0.177s,PASSED
+"selectOptionByValue(findTestObject(""homepage/select_rooms""), numRooms, false, CONTINUE_ON_FAILURE)",Chrome 74.0.3729.131,,2019-05-08 10:11:03,2019-05-08 10:11:03,0.070s,PASSED
+delay(1),Chrome 74.0.3729.131,,2019-05-08 10:11:03,2019-05-08 10:11:04,1.003s,PASSED
+"tadults = adults.split("","")",Chrome 74.0.3729.131,,2019-05-08 10:11:04,2019-05-08 10:11:04,0.001s,PASSED
+"tchildren = children.split("","")",Chrome 74.0.3729.131,,2019-05-08 10:11:04,2019-05-08 10:11:04,0.015s,PASSED
+"tchildages = childrenages.split("","")",Chrome 74.0.3729.131,,2019-05-08 10:11:04,2019-05-08 10:11:04,0.000s,PASSED
+tnumrooms = Integer.parseInt(numRooms),Chrome 74.0.3729.131,,2019-05-08 10:11:04,2019-05-08 10:11:04,0.016s,PASSED
+curchild = 0,Chrome 74.0.3729.131,,2019-05-08 10:11:04,2019-05-08 10:11:04,0.000s,PASSED
+"for ([i = 1, i <= tnumrooms, (i++)])",Chrome 74.0.3729.131,,2019-05-08 10:11:04,2019-05-08 10:11:06,1.510s,PASSED
+"click(findTestObject(""homepage/button_Search""))",Chrome 74.0.3729.131,,2019-05-08 10:11:06,2019-05-08 10:11:06,0.139s,PASSED
+waitForPageLoad(10),Chrome 74.0.3729.131,,2019-05-08 10:11:06,2019-05-08 10:11:08,2.447s,PASSED
+delay(5),Chrome 74.0.3729.131,,2019-05-08 10:11:08,2019-05-08 10:11:13,5.003s,PASSED
+closeBrowser(),Chrome 74.0.3729.131,,2019-05-08 10:11:13,2019-05-08 10:11:14,0.695s,PASSED
