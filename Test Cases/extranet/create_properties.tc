@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>create_properties</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>56ca9538-7f7b-4c5c-8042-0e935c0511f3</testCaseGuid>
+   <variable>
+      <defaultValue>'10000'</defaultValue>
+      <description></description>
+      <id>6ab0fbe7-d5e8-4340-b9b4-840978bcfec0</id>
+      <masked>false</masked>
+      <name>ticketNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>1</defaultValue>
+      <description></description>
+      <id>7fe964ee-5840-430d-94a3-fc9dcc7e9971</id>
+      <masked>false</masked>
+      <name>numRooms</name>
+   </variable>
+</TestCaseEntity>

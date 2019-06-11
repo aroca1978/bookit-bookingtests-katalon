@@ -14,7 +14,7 @@
       <guid>53399181-33e4-4684-b8c6-7da9bc11dbbf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Booking03</testCaseId>
+      <testCaseId>Test Cases/frontend_bookit/Booking03</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>a7e0fb0d-ed4f-46c9-9e59-e391e2bf1efd</id>
